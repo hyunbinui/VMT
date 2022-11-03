@@ -9,11 +9,11 @@ cd sample
 
 ```
 youtube-dl --get-id [playlist link] -i >> list.txt
-youtube-dl -a list.txt -o '%(id)s.%(ext)s' --all-subs --rm-cache-dir
+youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs 
 ```
 
 <br>
-
+<br>
 
 
 😧 in progress,,
