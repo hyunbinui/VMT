@@ -5,7 +5,7 @@
 mkdir sample
 cd sample
 ```
-- download vid/subs from youtube by using <a href="(https://github.com/ytdl-org/youtube-dl)" target="_blank">youtube-dl</a>
+- download vid/subs from youtube by using <a href="[https://github.com/ytdl-org/youtube-dl]" target="_blank">youtube-dl</a>
 
 ```
 youtube-dl --get-id PLpqr-se75wgucnSktniG80CMTFuH0-3PY -i >> list.txt
