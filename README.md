@@ -1,4 +1,4 @@
-# VMT
+# VMT for SUBS
 ### 1. CREATING DATASET
 - create 'sample' directory for dataset 
 ```
