@@ -1,9 +1,9 @@
 # VMT for SUBS
 ### 1. CREATING DATASET
-- create 'sample' directory for dataset 
+- create 'dataset' directory for dataset 
 ```
-mkdir sample
-cd sample
+mkdir dataset
+cd dataset
 ```
 - download videos / subtitles from youtube by using [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
