@@ -13,9 +13,10 @@ youtube-dl --get-id [playlist link] -i >> list.txt
 youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs 
 ```
 <br>
-### 2. Constructing Dataset
 
-- construct the dataset by running the 'create_dataset.ipynb' file
+### 2. Constructing Dataset
+<br>
+- construct the text pair dataset and video dataset by running the 'create_dataset.ipynb' file
 
 <br>
 
