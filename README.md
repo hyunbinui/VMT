@@ -1,6 +1,6 @@
 # VMT for SUBS
-## [ CREATING DATASET ]
-### 1. Downloading Youtube Playlist
+### [ CREATING DATASET ]
+#### 1. Downloading Youtube Playlist
 - create 'dataset' directory for dataset 
 ```
 mkdir dataset
@@ -14,8 +14,7 @@ youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs
 ```
 <br>
 
-### 2. Constructing Dataset
-<br>
+#### 2. Constructing Dataset
 - construct the text pair dataset and video dataset by running the 'create_dataset.ipynb' file
 
 <br>
