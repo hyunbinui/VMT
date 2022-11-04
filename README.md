@@ -1,5 +1,5 @@
-# <bold> VMT for SUBS </bold>
-### [ CREATING DATASET ]
+# VMT for SUBS 
+## CREATING DATASET 
 #### 1. Downloading Youtube Playlist
 - create 'dataset' directory for dataset 
 ```
