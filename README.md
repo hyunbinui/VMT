@@ -16,8 +16,8 @@ youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs
 
 #### 2. Constructing Dataset
 - download 'create_dataset.ipynb' file to the 'dataset' directory
-- construct the text pair and video dataset by running the 'create_dataset.ipynb' file
-  \n then, the 'dataset' directory would be configured as following
+- construct the text pair and video dataset by running the 'create_dataset.ipynb' file <br>
+  then, the 'dataset' directory would be configured as following
 ```
 dataset
 ├── create_dataset.ipynb
