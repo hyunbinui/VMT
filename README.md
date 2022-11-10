@@ -14,7 +14,8 @@ youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs
 ```
 <p align = center>↓</p>
 - if youtube-dl is way too slow, try using [yt-dlp](https://github.com/yt-dlp/yt-dlp) for downloading videos
-- 
+- d
+
 
 ```
 yt-dlp -a id_list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a
