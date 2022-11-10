@@ -10,16 +10,13 @@ cd dataset
 
 ```
 youtube-dl --get-id [playlist link] -i >> list.txt
-youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs 
+youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs --ignore-errors 
 ```
-<p align = center>↓</p>
 - if youtube-dl is way too slow, try using [yt-dlp](https://github.com/yt-dlp/yt-dlp) for downloading videos
-- d
-
 
 ```
-yt-dlp -a id_list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a
-# youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs --skip-download
+yt-dlp -a id_list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a --ignore-errors 
+# youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs --skip-download --ignore-errors 
 ```
 <br>
 
