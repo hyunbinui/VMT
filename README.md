@@ -12,7 +12,7 @@ cd dataset
 youtube-dl --get-id [playlist link] -i >> list.txt
 youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir --all-subs 
 ```
-<align = center>↓ 
+<p align = center>↓</p>
 <br>
 
 #### 2. Constructing Dataset
