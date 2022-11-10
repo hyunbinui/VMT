@@ -32,8 +32,8 @@ dataset
 │      ├── videoid_starttime_endtime.mp4
 │      └── .....  
 │
-├── video 1
-├── video 2
+├── videoid.mp4
+├── videoid.mp4
 ├── ....
 │
 ├── videoid.ko.vtt
