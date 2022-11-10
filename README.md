@@ -10,13 +10,13 @@ cd dataset
 
 ```
 youtube-dl --get-id [playlist link] -i >> list.txt
-youtube-dl -a id_list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
+youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
 ```
 - if youtube-dl is way too slow, try using [yt-dlp](https://github.com/yt-dlp/yt-dlp) for downloading videos
 
 ```
-yt-dlp -a id_list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a -i
-# youtube-dl -a id_list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
+yt-dlp -a list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a -i
+# youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
 ```
 <br>
 
