@@ -41,7 +41,7 @@ dataset
 ├── ...
 │
 ├── list.txt
-└── sample.json
+└── text_data.json
 ```
 <br>
 <br>
