@@ -11,44 +11,64 @@ pip install webvtt-py
 - create 'original_video' directory inside 'data' directory for Youtube videos 
 ```
 mkdir original_video
-cd original_video
+mkdir original_subs
+```
+- I recommend downloading whole playlist
+```
+# playlist → youtube ids → txt file
+youtube-dl --get-id [playlist link] -i >> list.txt
 ```
 - download videos / subtitles from youtube by using [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
 ```
-youtube-dl --get-id [playlist link] -i >> list.txt
-youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' -i 
+cd orignal_video
+youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir 
 ```
+```
+cd original_subs
+# youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
+```
+
 - if youtube-dl is way too slow, try using [yt-dlp](https://github.com/yt-dlp/yt-dlp) for downloading videos
 
 ```
+cd orignal_video
 yt-dlp -a list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a -i
+```
+```
+# cd original_subs
 # youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
 ```
 <br>
 
 ### 2. Constructing Dataset
-- download 'create_dataset.ipynb' file to the 'dataset' directory
-- construct the text pair and video dataset by running the 'create_dataset.ipynb' file <br>
-  then, the 'dataset' directory would be configured as following :
+- construct the text pair and video dataset by running the create_dataset.py file in 'data' directory <br>
+  then, the 'data' directory would be configured as following :
 ```
-dataset
-├── create_dataset.ipynb
-├── videos 
-│      ├── videoid_starttime_endtime.mp4
-│      ├── videoid_starttime_endtime.mp4
+data
+├── original_video 
+│      ├── videoid1.mp4
+│      ├── videoid2.mp4
 │      └── .....  
 │
-├── videoid.mp4
-├── videoid.mp4
-├── ....
+├── original_subs
+│      ├── videoid1.ko.vtt
+│      ├── videoid1.en.vtt
+│      ├── videoid2.ko.vtt
+│      ├── videoid2.en.vtt
+│      └── .....  
 │
-├── videoid.ko.vtt
-├── videoid.en.vtt
-├── ...
+├── dataset
+│      ├── video_data
+│      │      ├── videoid_starttime_endtime.mp4
+│      │      ├── videoid_starttime_endtime.mp4
+│      │      └── .....
+│      │
+│      └── text_data.json
 │
 ├── list.txt
-└── text_data.json
+├── utils.py
+└── create_dataset.py
 ```
 <br>
 <br>
