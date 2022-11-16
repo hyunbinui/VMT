@@ -33,8 +33,11 @@ youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '/target_directory/origin
 <br>
 
 ### 2. Constructing Dataset
-- construct the text pair and video dataset by running the create_dataset.py file in 'data' directory <br>
-  then, the 'data' directory would be configured as following :
+- construct the text pair and video dataset by running the create_dataset.py file in 'data' directory
+```
+python create_dataset.py --idpath ./list.txt
+```
+- then, the 'data' directory would be configured as following :
 ```
 data
 ├── original_video 
