@@ -7,7 +7,7 @@ pip install moviepy
 pip install imageio_ffmpeg
 pip install webvtt-py
 ```
-### 1. Downloading Youtube Videos
+### 1. Downloading Youtube Videos & Subtitles
 - create 'original_video' & 'original_subs' directory inside 'data' directory for Youtube videos and subtitles
 ```
 mkdir original_video
