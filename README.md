@@ -8,12 +8,12 @@ pip install imageio_ffmpeg
 pip install webvtt-py
 ```
 ### 1. Downloading Youtube Videos
-- create 'original_video' directory inside 'data' directory for Youtube videos 
+- create 'original_video' & 'original_subs' directory inside 'data' directory for Youtube videos and subtitles
 ```
 mkdir original_video
 mkdir original_subs
 ```
-- (recommendation) download whole playlist
+- (recommendation) get video ids from playlist
 ```
 # playlist → youtube ids → txt file
 youtube-dl --get-id [playlist link] -i >> list.txt
