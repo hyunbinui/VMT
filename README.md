@@ -1,4 +1,7 @@
 # VMT for SUBS 
+
+<br>
+
 ## CREATING DATASET 
 #### *requirements*
 ```
@@ -6,11 +9,11 @@ pip install moviepy
 pip install imageio_ffmpeg
 pip install webvtt-py
 ```
-#### 1. Downloading Youtube Playlist
-- create 'dataset' directory for dataset 
+#### 1. Downloading Youtube Videos
+- create 'original_video' directory for Youtube videos 
 ```
-mkdir dataset
-cd dataset
+mkdir original_video
+cd original_video
 ```
 - download videos / subtitles from youtube by using [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
