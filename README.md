@@ -1,13 +1,13 @@
 ![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT%20for%20SUBS&fontSize=80&fontColor=0000ff)
 
 # CREATING DATASET 
-#### *prerequisites*
+### *prerequisites*
 ```
 pip install moviepy
 pip install imageio_ffmpeg
 pip install webvtt-py
 ```
-#### 1. Downloading Youtube Videos
+### 1. Downloading Youtube Videos
 - create 'original_video' directory inside 'data' directory for Youtube videos 
 ```
 mkdir original_video
@@ -27,7 +27,7 @@ yt-dlp -a list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a -i
 ```
 <br>
 
-#### 2. Constructing Dataset
+### 2. Constructing Dataset
 - download 'create_dataset.ipynb' file to the 'dataset' directory
 - construct the text pair and video dataset by running the 'create_dataset.ipynb' file <br>
   then, the 'dataset' directory would be configured as following :
