@@ -13,7 +13,7 @@ pip install webvtt-py
 mkdir original_video
 mkdir original_subs
 ```
-- I recommend downloading whole playlist
+- *recommendation* download whole playlist
 ```
 # playlist → youtube ids → txt file
 youtube-dl --get-id [playlist link] -i >> list.txt
