@@ -1,16 +1,14 @@
 # VMT for SUBS 
 
-<br>
-
 ## CREATING DATASET 
-#### *requirements*
+#### *prerequisites*
 ```
 pip install moviepy
 pip install imageio_ffmpeg
 pip install webvtt-py
 ```
 #### 1. Downloading Youtube Videos
-- create 'original_video' directory for Youtube videos 
+- create 'original_video' directory inside 'data' directory for Youtube videos 
 ```
 mkdir original_video
 cd original_video
