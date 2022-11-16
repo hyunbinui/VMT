@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&color=random&height=300&section=header&text=VMT%20for%20Subs&fontSize=80)
+![header](https://capsule-render.vercel.app/api?type=transparent&height=300&section=header&text=VMT%20for%20Subs&fontSize=80&fontColor=0000ff)
 
 ## CREATING DATASET 
 #### *prerequisites*
