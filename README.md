@@ -1,5 +1,11 @@
 # VMT for SUBS 
 ## CREATING DATASET 
+#### *requirements*
+```
+pip install moviepy
+pip install imageio_ffmpeg
+pip install webvtt-py
+```
 #### 1. Downloading Youtube Playlist
 - create 'dataset' directory for dataset 
 ```
