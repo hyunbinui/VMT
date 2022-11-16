@@ -18,26 +18,21 @@ mkdir original_subs
 # playlist → youtube ids → txt file
 youtube-dl --get-id [playlist link] -i >> list.txt
 ```
-- download videos / subtitles from youtube by using [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+- download videos / subtitles (en-ko) from youtube by using [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
 ```
-cd orignal_video
-youtube-dl -a list.txt -o '%(id)s.%(ext)s' --rm-cache-dir 
-```
-```
-cd original_subs
-# youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
+youtube-dl -a list.txt -o '/target_directory/original_vid/%(id)s.%(ext)s' --rm-cache-dir --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s'
 ```
 
 - if youtube-dl is way too slow, try using [yt-dlp](https://github.com/yt-dlp/yt-dlp) for downloading videos
 
 ```
 cd orignal_video
-yt-dlp -a list.txt -o '%(id)s.%(ext)s' -S ext:mp4:m4a -i
+yt-dlp -a list.txt -o '/target_directory/original_vid/%(id)s.%(ext)s' -S ext:mp4:m4a -i
 ```
 ```
 # cd original_subs
-# youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '%(id)s.%(ext)s' --skip-download -i 
+# youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s' --skip-download -i 
 ```
 <br>
 
