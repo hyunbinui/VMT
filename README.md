@@ -27,12 +27,8 @@ youtube-dl -a list.txt -o '/target_directory/original_vid/%(id)s.%(ext)s' --rm-c
 - if youtube-dl is way too slow, try using [yt-dlp](https://github.com/yt-dlp/yt-dlp) for downloading videos
 
 ```
-cd orignal_video
 yt-dlp -a list.txt -o '/target_directory/original_vid/%(id)s.%(ext)s' -S ext:mp4:m4a -i
-```
-```
-# cd original_subs
-# youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s' --skip-download -i 
+youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s' --skip-download -i 
 ```
 <br>
 
