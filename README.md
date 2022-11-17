@@ -41,21 +41,21 @@ python create_dataset.py --idpath ./list.txt
 ```
 data
 ├── original_video 
-│      ├── videoid1.mp4
-│      ├── videoid2.mp4
+│      ├── YouTubeID1.mp4
+│      ├── YouTubeID2.mp4
 │      └── .....  
 │
 ├── original_subs
-│      ├── videoid1.ko.vtt
-│      ├── videoid1.en.vtt
-│      ├── videoid2.ko.vtt
-│      ├── videoid2.en.vtt
+│      ├── YouTubeID1.ko.vtt
+│      ├── YouTubeID1.en.vtt
+│      ├── YouTubeID2.ko.vtt
+│      ├── YouTubeID2.en.vtt
 │      └── .....  
 │
 ├── dataset
 │      ├── video_data
-│      │      ├── videoid_starttime_endtime.mp4
-│      │      ├── videoid_starttime_endtime.mp4
+│      │      ├── YouTubeID_StartTime_EndTime.mp4
+│      │      ├── YouTubeID_StartTime_EndTime.mp4
 │      │      └── .....
 │      │
 │      └── text_data.json
