@@ -64,6 +64,14 @@ data
 ├── utils.py
 └── create_dataset.py
 ```
+- cf. text_data.json annotation format
+```
+{
+  'YouTubeID_StartTime_EndTime': {
+    'ko' : 'Parallel Korean Caption',
+    'en' : 'Parallel English Caption',
+}
+```
 <br>
 <br>
 
