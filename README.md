@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT%20for%20SUBS&fontSize=80&fontColor=0000ff)
+![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT%20for%20SUBS&fontSize=80&fontColor=345F53)
 
 # CREATING DATASET 
 ### *prerequisites*
@@ -6,6 +6,10 @@
 pip install moviepy
 pip install imageio_ffmpeg
 pip install webvtt-py
+```
+### 0. Clone the Repo
+```
+
 ```
 ### 1. Downloading Youtube Videos & Subtitles
 - create 'original_video' & 'original_subs' directory inside 'data' directory for Youtube videos and subtitles
