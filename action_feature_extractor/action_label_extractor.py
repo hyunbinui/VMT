@@ -83,7 +83,6 @@ def run(args):
         to_json(dict, args.out_dir)
 
 
-    
 
 if __name__ == "__main__":
 

@@ -46,7 +46,7 @@ def read_video(vid):
 
 
 def run(args):
-    # Run RGB model
+
     i3d_rgb = I3D(num_classes=400, modality='rgb')
     i3d_rgb.eval()
     i3d_rgb.load_state_dict(torch.load(args.rgb_weights_path))
@@ -65,7 +65,7 @@ def run(args):
             continue
 
         clip_len = clip.shape[1]
-        print(clip_len)
+
         if clip_len <= args.max_interval:
             features = get_features(clip, i3d_rgb)
         else:
@@ -74,7 +74,6 @@ def run(args):
             while True:
                 tmp_2 = tmp_1 + args.max_interval
                 tmp_2 = min(tmp_2, clip_len)
-                print(clip[:, tmp_1:tmp_2].shape)
                 feat = get_features(clip[:, tmp_1:tmp_2], i3d_rgb)
                 features.append(feat)
                 if tmp_2 == clip_len:
@@ -86,6 +85,7 @@ def run(args):
         np.save(os.path.join(args.out_dir, filename + '.npy'), features)
 
 
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
@@ -95,8 +95,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--rgb_weights_path', type=str, default='./VMT-for-SUBS/action_feature_extractor/model_rgb.pth', help='Path to rgb model state_dict')
     parser.add_argument('--video_dir', type=str, default='./dataset/video_data', help='directory that contains video clips')
-    # parser.add_argument('--video_dir', type=str, default='/home/ubuntu/workspace/221122_vmt_hyunbin/DEAR/action_feature_extraction/code_kunst/', help='directory that contains video clips')
-    parser.add_argument('--out_dir', type=str, default='./dataset/action_feature/', help='directory for extracted action features')
+    parser.add_argument('--out_dir', type=str, default='./dataset/', help='directory for extracted action features')
     args = parser.parse_args()
 
     if not os.path.exists(args.out_dir):
