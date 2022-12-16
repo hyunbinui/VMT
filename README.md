@@ -46,7 +46,8 @@ python create_dataset.py --idpath ./list.txt
 {
   'YouTubeID_StartTime_EndTime': {
     'ko' : 'Parallel Korean Caption',
-    'en' : 'Parallel English Caption',
+    'en' : 'Parallel English Caption'},
+    ...
 }
 ```
 <br>
@@ -76,6 +77,14 @@ python action_feature_extractor.py
 - some VMT models (i.e., [DEAR](https://www.sciencedirect.com/science/article/abs/pii/S0950705122002684)) takes video action labels as an input. we could create action labels also by using pretrained I3D model.
 ```
 python action_label_extractor.py
+```
+- cf. action_labels.json annotation format
+```
+{
+  'YouTubeID_StartTime_EndTime': 
+  [19, 17, 191, 171, 97],
+   ...
+}
 ```
 ### Then, our 'data' directory would be configured as following.
 ```
