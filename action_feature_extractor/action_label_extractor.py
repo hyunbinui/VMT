@@ -89,7 +89,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--video_dir', type=str, default='./dataset/video_data', help='directory that contains video clips')
-    parser.add_argument('--out_dir', type=str, default='./dataset/action_feature/', help='directory for extracted action features')
+    parser.add_argument('--out_dir', type=str, default='./dataset/', help='directory for extracted action features')
     args = parser.parse_args()
 
     if not os.path.exists(args.out_dir):
