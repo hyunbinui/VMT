@@ -46,7 +46,7 @@ def read_video(vid):
 
 
 def run(args):
-    # Run RGB model
+
     i3d_rgb = I3D(num_classes=400, modality='rgb')
     i3d_rgb.eval()
     i3d_rgb.load_state_dict(torch.load(args.rgb_weights_path))
