@@ -63,6 +63,7 @@ pip install imageio
 pip install --upgrade mxnet
 pip install --upgrade gluoncv
 ```
+<br>
 ### 0. Clone the Repo
 you've already done it, right ? 
 <br>
