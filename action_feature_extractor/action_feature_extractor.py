@@ -17,10 +17,6 @@ from tqdm import tqdm
 
 from i3dpt import I3D
 
-FPS = 25
-MAX_INTERVAL = 120
-OVERLAP = 25
-
 
 def get_features(sample, model):
     sample = sample.transpose(0, 4, 1, 2, 3)
@@ -70,20 +66,20 @@ def run(args):
 
         clip_len = clip.shape[1]
         print(clip_len)
-        if clip_len <= MAX_INTERVAL:
+        if clip_len <= args.max_interval:
             features = get_features(clip, i3d_rgb)
         else:
             tmp_1 = 0
             features = []
             while True:
-                tmp_2 = tmp_1 + MAX_INTERVAL
+                tmp_2 = tmp_1 + args.max_interval
                 tmp_2 = min(tmp_2, clip_len)
                 print(clip[:, tmp_1:tmp_2].shape)
                 feat = get_features(clip[:, tmp_1:tmp_2], i3d_rgb)
                 features.append(feat)
                 if tmp_2 == clip_len:
                     break
-                tmp_1 = max(0, tmp_2 - OVERLAP)
+                tmp_1 = max(0, tmp_2 - args.overlap)
 
             features = np.concatenate(features, axis=1)
 
@@ -93,6 +89,9 @@ def run(args):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
+
+    parser.add_argument('--max_interval', type=int, default=120, help='max interval of video clip')
+    parser.add_argument('--overlap', type=int, default=25, help='overlap')
 
     parser.add_argument('--rgb_weights_path', type=str, default='./VMT-for-SUBS/action_feature_extractor/model_rgb.pth', help='Path to rgb model state_dict')
     parser.add_argument('--video_dir', type=str, default='./dataset/video_data', help='directory that contains video clips')
@@ -104,5 +103,3 @@ if __name__ == "__main__":
         os.makedirs(args.out_dir)
 
     run(args)
-
-
