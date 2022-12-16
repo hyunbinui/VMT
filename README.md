@@ -79,6 +79,27 @@ data
 ```
 <br>
 <br>
+# EXTRACTING VIDEO FEATURES 
+: most VMT models does not have video feature extractor inside. we need to extract video features ourselves and use them as an input.
+so, we need our own VIDEO FEATURE EXTRACTOR !
+### *prerequisites*
+```
+pip install imageio
+pip install --upgrade mxnet
+pip install --upgrade gluoncv
+```
+### 0. Clone the Repo
+you've already done it, right ? 
+<br>
+### 1. Extracting Video Features
+- extract video features using a pretrained I3D model and save them as .npy files. each video would be represented as a numpy array of size (1, num_of_segments, 1024).
+```
+python action_feature_extractor.py
+```
+
+
+
+
 
 in progress...
 
