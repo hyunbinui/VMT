@@ -64,7 +64,7 @@ pip install --upgrade gluoncv
 ```
 
 ### 0. Clone the Repo
-you've already done it, right ? 
+- you've already done it, right ? 
 
 
 ### 1. Extracting Video Features
