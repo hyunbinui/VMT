@@ -86,6 +86,7 @@ def run(args):
         np.save(os.path.join(args.out_dir, filename + '.npy'), features)
 
 
+        
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
