@@ -53,7 +53,7 @@ python create_dataset.py --idpath ./list.txt
 <br>
 
 # EXTRACTING VIDEO FEATURES 
-: most VMT models does not have internal video feature extractor. we need to extract video features ourselves and use them as an input.
+: most VMT models do not have internal video feature extractor. we need to extract video features ourselves and use them as an input.
 we need our own VIDEO FEATURE EXTRACTOR !
 
 ### *prerequisites*
