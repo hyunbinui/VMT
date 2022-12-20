@@ -179,9 +179,11 @@ def create_video_data(outputpath, idlist, processedsub):
 
       # duration has to be longer than 1 sec 
         if start != end:
+            
             if os.path.exists(output_video_path):
                 continue
-                # end time should be smaller than full duration of original video
+            
+            # end time should be smaller than full duration of original video
             if end > fullduration:
                 end = None
             else :
