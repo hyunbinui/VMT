@@ -1,0 +1,24 @@
+TRAIN_VOCAB_EN: data/train_vocab_en.txt
+TRAIN_VOCAB_KO: data/train_vocab_ko.txt
+RESULT_DIR: results/
+LOG_DIR: logs/
+CHK_DIR: checkpoints/
+LABEL_DIR : /home/ubuntu/workspace/221122_vmt_hyunbin/DEAR/label/
+DATA_DIR: /home/ubuntu/workspace/221122_vmt_hyunbin/DEAR/data/
+MAX_INPUT_LENGTH: 40
+MAX_VID_LENGTH: 32
+batch_size: 64
+epochs: 10 #원래 100
+seed: 1917
+model_type: trans
+train_id: rhye
+nb_blocks: 6
+d_model: 512
+att_h: 8
+dropout: 0.4
+maxlen: 35
+warmup_steps: 9600
+lr: 0.001
+smoothing: 0.3
+forward_steps: 15
+label_l: 0.4
