@@ -2,6 +2,7 @@ from pathlib import Path
 import webvtt
 import os, json
 from moviepy.video.io.VideoFileClip import VideoFileClip
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 
 
 def txt_to_list(txtpath):
@@ -176,13 +177,19 @@ def create_video_data(outputpath, idlist, processedsub):
         end = processedsub[i][2]
         end = get_sec(end)
 
+
         # duration has to be longer than 1 sec 
         if start != end:
                 # end time should be smaller than full duration of original video
                 if end > fullduration:
                     end = None
                 else :
-                    with VideoFileClip(input_video_path) as video:
-                        new = video.subclip(start, end)
-                        new.write_videofile(output_video_path, codec='libx264')
+                    ## method 1 : video + audio
+                    # with VideoFileClip(input_video_path) as video:
+                        # new = video.subclip(start, end)
+                        # new.write_videofile(output_video_path, codec='libx264')
+
+                    # method 2 : only video (no audio)
+                    ffmpeg_extract_subclip(input_video_path, start, end, targetname = output_video_path)
+
 
