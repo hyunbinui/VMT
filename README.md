@@ -120,7 +120,6 @@ data
 └── create_dataset.py
 ```
 <br>
-<br>
 
 # DEAR
 ## About DEAR
@@ -163,12 +162,13 @@ bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/me
 ```
 python train_circle.py
 ```
-<br>
-
-# Reference
+  
+## Reference
 - [Chen, S., Zeng, Y., Cao, D., & Lu, S. (2022). Video-guided machine translation via dual-level back-translation. Knowledge-Based Systems, 245, 108598.](https://www.sciencedirect.com/science/article/abs/pii/S0950705122002684)
 - https://kbs-2021.wixsite.com/dear    
 
+<br>
+  
 # VRET
 ## About VRET
 VRET(Visual Relationship-Enhanced Transformer) is a model that investigated video-guided machine translation(VMT) task via visual relationship-enhanced transformer by constructing a semantic–visual relational graph as a cross-modal bridge. To be specific, graph convolutional network was deployed to capture the relationship among visual semantics to improve translation performance.  
@@ -200,11 +200,10 @@ pip install trtokenizer
 ```
 python train.py
 ```
-<br>
-
+  
 ## Reference
 - [Chen, S., Zeng, Y., Cao, D., & Lu, S. (2022). Vision talks: Visual relationship-enhanced transformer for video-guided machine translation. Expert Systems with Applications, 209, 118264.](https://www.sciencedirect.com/science/article/abs/pii/S0957417422014051)
-- https://eswa-2021.wixsite.com/vret
+- https://eswa-2021.wixsite.com/vret  
 
 
 
