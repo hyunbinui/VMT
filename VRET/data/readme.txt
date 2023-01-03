@@ -8,7 +8,7 @@ You must make data repos like following.
           │       ├── YouTubeID_StartTime_EndTime.npy
           │       ├── YouTubeID_StartTime_EndTime.npy
           │       └── ...    
-          └── action_feature
+          └── scene_v_graph
                   ├── YouTubeID_StartTime_EndTime.npy
                   ├── YouTubeID_StartTime_EndTime.npy
                   └── ...    
