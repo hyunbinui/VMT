@@ -1,5 +1,7 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT%20for%20SUBS&fontSize=80&fontColor=020079)
+![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT&fontSize=80&fontColor=020079)
 
+# About KESVI
+KESVI(Ko-En Subtitle parallel corpus with VIdeos) is a large-scale parallel subtitles dataset for VMT research. KESVI contains approximately 220,000 Korean-English parallel subtitle pairs and corresponding video clips. 
 # CREATING DATASET 
 ### *prerequisites*
 ```
@@ -9,8 +11,7 @@ pip install webvtt-py
 ```
 ### 0. Clone the Repo
 ```
-! git clone https://github.com/hyunbinui/VMT-for-SUBS.git
-cd data
+! git clone https://github.com/twigfarm/letr-tool-KESVI.git
 ```
 ### 1. Downloading Youtube Videos & Subtitles
 - create 'original_video' & 'original_subs' directory inside 'data' directory for Youtube videos and subtitles
@@ -52,7 +53,7 @@ python create_dataset.py --idpath ./list.txt
 ```
 <br>
 
-# EXTRACTING VIDEO FEATURES 
+# (OPTIONAL) EXTRACTING VIDEO FEATURES 
 : most VMT models do not have internal video feature extractor. we need to extract video features ourselves and use them as an input.
 we need our own VIDEO FEATURE EXTRACTOR !
 
@@ -74,7 +75,7 @@ python action_feature_extractor.py
 ```
 
 ### 2. Creating Action Labels
-- some VMT models (i.e., [DEAR](https://www.sciencedirect.com/science/article/abs/pii/S0950705122002684)) takes video action labels as an input. we could create action labels also by using pretrained I3D model.
+- some VMT models (i.e., [DEAR](https://www.sciencedirect.com/science/article/abs/pii/S0950705122002684)) take video action labels as an input. we could create action labels also by using pretrained I3D model.
 ```
 python action_label_extractor.py
 ```
