@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT%20for%20SUBS&fontSize=80&fontColor=345F53)
+![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT%20for%20SUBS&fontSize=80&fontColor=020079)
 
 # CREATING DATASET 
 ### *prerequisites*
@@ -121,6 +121,90 @@ data
 ```
 <br>
 <br>
-in progress...
+
+# DEAR
+## About DEAR
+DEAR(Dual-lEvel bAck-tRanslation) is a model that investigated video-guided machine translation(VMT) task via dual-level back-translation. To be specific, it introduced sentence-level back-translation along with concept-level back-translation and implemented multi-pattern joint learning to improve translation performance.  
+  
+If you want to know more about DEAR, check out [the official website](https://kbs-2021.wixsite.com/dear) and [this post](https://twigfarm.notion.site/Video-guided-machine-translation-via-dual-level-back-translation-83f9d235c5d7405e92d98342e8a0fb6b).  
+<br>
+
+## Create Dataset
+DEAR takes three elements as an input ; parallel sentence pairs, video action features, and video action labels.
+Follow [this repo](https://github.com/twigfarm/letr-tool-KESVI) to construct appropriate dataset.  
+<br>
+
+## Train DEAR
+### *prerequisites*
+- basics  
+: pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
+```
+pip install torch 
+```
+- install konlpy + MeCab  
+: this may be troublesome, but our friend google is always there for you. good luck !
+```
+# konlpy
+sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl  # install Java 1.8 or up
+
+python3 -m pip install --upgrade pip
+python3 -m pip install konlpy   
+```
+```
+# MeCab
+sudo apt-get install curl git
+bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
+```
+### 0. Clone the Repo
+```
+! git clone https://github.com/twigfarm/letr-proto-DEAR.git
+```
+### 1. Train the Model
+```
+python train_circle.py
+```
+<br>
+
+# Reference
+- [Chen, S., Zeng, Y., Cao, D., & Lu, S. (2022). Video-guided machine translation via dual-level back-translation. Knowledge-Based Systems, 245, 108598.](https://www.sciencedirect.com/science/article/abs/pii/S0950705122002684)
+- https://kbs-2021.wixsite.com/dear    
+
+# VRET
+## About VRET
+VRET(Visual Relationship-Enhanced Transformer) is a model that investigated video-guided machine translation(VMT) task via visual relationship-enhanced transformer by constructing a semantic–visual relational graph as a cross-modal bridge. To be specific, graph convolutional network was deployed to capture the relationship among visual semantics to improve translation performance.  
+  
+If you want to know more about VRET, check out [the official website](https://eswa-2021.wixsite.com/vret) and [this post](https://twigfarm.notion.site/Vision-talks-Visual-relationship-enhanced-transformer-for-video-guided-machine-translation-7bc8e6947ee04dcd8143635b682570a0).  
+<br>
+
+## Create Dataset
+DEAR takes three elements as an input ; parallel sentence pairs, scene nodes, and scene graphs.
+Follow [this repo](https://github.com/twigfarm/letr-tool-KESVI) to construct parallel sentence pairs, and follow [this repo](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch) to create scene nodes and scene graphs.   
+<br>
+
+## Train VRET
+### *prerequisites*
+- basics  
+: pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
+```
+pip install torch 
+```
+- install TrTokenizer  
+```
+pip install trtokenizer
+```
+### 0. Clone the Repo
+```
+! git clone https://github.com/twigfarm/letr-proto-VRET.git
+```
+### 1. Train the Model
+```
+python train.py
+```
+<br>
+
+## Reference
+- [Chen, S., Zeng, Y., Cao, D., & Lu, S. (2022). Vision talks: Visual relationship-enhanced transformer for video-guided machine translation. Expert Systems with Applications, 209, 118264.](https://www.sciencedirect.com/science/article/abs/pii/S0957417422014051)
+- https://eswa-2021.wixsite.com/vret
+
 
 
