@@ -121,7 +121,7 @@ data
 ```
 <br>
 
-# DEAR
+# \*DEAR\*
 ## About DEAR
 DEAR(Dual-lEvel bAck-tRanslation) is a model that investigated video-guided machine translation(VMT) task via dual-level back-translation. To be specific, it introduced sentence-level back-translation along with concept-level back-translation and implemented multi-pattern joint learning to improve translation performance.  
   
@@ -169,7 +169,7 @@ python train_circle.py
 
 <br>
   
-# VRET
+# \*VRET\*
 ## About VRET
 VRET(Visual Relationship-Enhanced Transformer) is a model that investigated video-guided machine translation(VMT) task via visual relationship-enhanced transformer by constructing a semantic–visual relational graph as a cross-modal bridge. To be specific, graph convolutional network was deployed to capture the relationship among visual semantics to improve translation performance.  
   
