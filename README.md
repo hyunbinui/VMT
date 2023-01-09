@@ -1,9 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT&fontSize=80&fontColor=020079)
 
-# About KESVI
-KESVI(Ko-En Subtitle parallel corpus with VIdeos) is a large-scale parallel subtitles dataset for VMT research. KESVI contains approximately 220,000 Korean-English parallel subtitle pairs and corresponding video clips.  
-<br>
-
 ## CREATING DATASET 
 ### *prerequisites*
 ```
