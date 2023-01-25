@@ -1,0 +1,355 @@
+2023-01-10 16:41:00,730:INFO: Training model: trans_rhyer
+2023-01-10 16:53:22,172:INFO: Training model: trans_rhyer
+2023-01-10 17:18:10,607:INFO: Vocab size en/ko:9062/13240
+2023-01-10 17:40:10,601:INFO: train/val/test size: 2858/358/22864
+2023-01-10 17:54:19,397:INFO: Total time used: 0:13:40 Epoch 0 time used: 0:13:40 train loss: 6.9673 val loss: 0.0035 corpbleu_en2ko: 0.0149 corpbleu_ko2en: 0.0464
+2023-01-10 17:54:22,239:INFO: Finished 1 epochs of training
+2023-01-10 17:54:22,240:INFO: Summary name train loss is illegal; using train_loss instead.
+2023-01-10 17:54:22,243:INFO: Summary name validation loss is illegal; using validation_loss instead.
+2023-01-11 07:58:32,477:INFO: Training model: trans_rhyer
+2023-01-11 08:23:17,959:INFO: Vocab size en/ko:9062/13240
+2023-01-11 08:49:27,321:INFO: train/val/test size: 2858/358/22864
+2023-01-11 09:03:31,257:INFO: Total time used: 0:13:39 Epoch 0 time used: 0:13:39 train loss: 6.9673 val loss: 0.0035 corpbleu_en2ko: 0.0149 corpbleu_ko2en: 0.0464
+2023-01-11 09:03:40,741:INFO: Finished 1 epochs of training
+2023-01-11 09:17:42,641:INFO: Training model: trans_rhyer
+2023-01-11 09:34:08,675:INFO: Training model: trans_rhyer
+2023-01-11 09:40:54,417:INFO: Training model: trans_rhyer
+2023-01-11 10:07:47,863:INFO: Vocab size en/ko:9062/13240
+2023-01-11 10:37:02,154:INFO: train/val/test size: 2858/358/22864
+2023-01-11 10:51:23,297:INFO: Total time used: 0:13:58 Epoch 0 time used: 0:13:58 train loss: 6.9673 val loss: 0.0035 corpbleu_en2ko: 0.0149 corpbleu_ko2en: 0.0464
+2023-01-11 10:51:32,020:INFO: Finished 1 epochs of training
+2023-01-11 11:05:30,320:INFO: Total time used: 0:28:05 Epoch 1 time used: 0:13:58 train loss: 5.0243 val loss: 0.0029 corpbleu_en2ko: 0.0465 corpbleu_ko2en: 0.1186
+2023-01-11 11:05:35,764:INFO: Finished 2 epochs of training
+2023-01-11 11:19:44,907:INFO: Total time used: 0:42:20 Epoch 2 time used: 0:14:09 train loss: 4.2720 val loss: 0.0025 corpbleu_en2ko: 0.0761 corpbleu_ko2en: 0.1705
+2023-01-11 11:19:50,123:INFO: Finished 3 epochs of training
+2023-01-11 11:33:46,233:INFO: Total time used: 0:56:21 Epoch 3 time used: 0:13:56 train loss: 3.8385 val loss: 0.0023 corpbleu_en2ko: 0.0982 corpbleu_ko2en: 0.2083
+2023-01-11 11:33:51,464:INFO: Finished 4 epochs of training
+2023-01-11 11:47:54,361:INFO: Total time used: 1:10:29 Epoch 4 time used: 0:14:02 train loss: 3.5260 val loss: 0.0021 corpbleu_en2ko: 0.1116 corpbleu_ko2en: 0.2364
+2023-01-11 11:47:59,913:INFO: Finished 5 epochs of training
+2023-01-11 12:02:12,342:INFO: Total time used: 1:24:47 Epoch 5 time used: 0:14:12 train loss: 3.3173 val loss: 0.0020 corpbleu_en2ko: 0.1246 corpbleu_ko2en: 0.2551
+2023-01-11 12:02:23,132:INFO: Finished 6 epochs of training
+2023-01-11 12:16:30,485:INFO: Total time used: 1:39:05 Epoch 6 time used: 0:14:07 train loss: 3.1690 val loss: 0.0020 corpbleu_en2ko: 0.1341 corpbleu_ko2en: 0.2669
+2023-01-11 12:16:35,744:INFO: Finished 7 epochs of training
+2023-01-11 12:30:30,379:INFO: Total time used: 1:53:05 Epoch 7 time used: 0:13:54 train loss: 3.0567 val loss: 0.0019 corpbleu_en2ko: 0.1415 corpbleu_ko2en: 0.2805
+2023-01-11 12:30:36,398:INFO: Finished 8 epochs of training
+2023-01-11 12:44:55,770:INFO: Total time used: 2:07:31 Epoch 8 time used: 0:14:19 train loss: 2.9669 val loss: 0.0019 corpbleu_en2ko: 0.1457 corpbleu_ko2en: 0.2866
+2023-01-11 12:45:03,177:INFO: Finished 9 epochs of training
+2023-01-11 12:58:54,418:INFO: Total time used: 2:21:29 Epoch 9 time used: 0:13:51 train loss: 2.8927 val loss: 0.0018 corpbleu_en2ko: 0.1522 corpbleu_ko2en: 0.2954
+2023-01-11 12:59:01,221:INFO: Finished 10 epochs of training
+2023-01-11 13:13:06,686:INFO: Total time used: 2:35:41 Epoch 10 time used: 0:14:05 train loss: 2.8314 val loss: 0.0018 corpbleu_en2ko: 0.1564 corpbleu_ko2en: 0.3018
+2023-01-11 13:13:13,274:INFO: Finished 11 epochs of training
+2023-01-11 13:27:15,309:INFO: Total time used: 2:49:50 Epoch 11 time used: 0:14:02 train loss: 2.7780 val loss: 0.0018 corpbleu_en2ko: 0.1604 corpbleu_ko2en: 0.3087
+2023-01-11 13:27:20,559:INFO: Finished 12 epochs of training
+2023-01-11 13:41:57,527:INFO: Total time used: 3:04:32 Epoch 12 time used: 0:14:36 train loss: 2.7301 val loss: 0.0018 corpbleu_en2ko: 0.1634 corpbleu_ko2en: 0.3129
+2023-01-11 13:42:03,043:INFO: Finished 13 epochs of training
+2023-01-11 13:56:23,199:INFO: Total time used: 3:18:58 Epoch 13 time used: 0:14:20 train loss: 2.6893 val loss: 0.0017 corpbleu_en2ko: 0.1667 corpbleu_ko2en: 0.3181
+2023-01-11 13:56:30,816:INFO: Finished 14 epochs of training
+2023-01-11 14:10:03,164:INFO: Total time used: 3:32:38 Epoch 14 time used: 0:13:32 train loss: 2.6520 val loss: 0.0017 corpbleu_en2ko: 0.1696 corpbleu_ko2en: 0.3221
+2023-01-11 14:10:10,409:INFO: Finished 15 epochs of training
+2023-01-11 14:45:59,769:INFO: Total time used: 4:08:35 Epoch 15 time used: 0:35:49 train loss: 8.0508 val loss: 0.0018 corpbleu_en2ko: 0.1526 corpbleu_ko2en: 0.2946
+2023-01-11 14:45:59,770:INFO: Finished 16 epochs of training
+2023-01-11 15:22:42,231:INFO: Total time used: 4:45:17 Epoch 16 time used: 0:36:42 train loss: 6.9373 val loss: 0.0018 corpbleu_en2ko: 0.1552 corpbleu_ko2en: 0.2979
+2023-01-11 15:22:42,232:INFO: Finished 17 epochs of training
+2023-01-11 15:59:04,406:INFO: Total time used: 5:21:39 Epoch 17 time used: 0:36:22 train loss: 6.5253 val loss: 0.0018 corpbleu_en2ko: 0.1570 corpbleu_ko2en: 0.3034
+2023-01-11 15:59:04,408:INFO: Finished 18 epochs of training
+2023-01-11 16:35:36,179:INFO: Total time used: 5:58:11 Epoch 18 time used: 0:36:31 train loss: 6.2864 val loss: 0.0018 corpbleu_en2ko: 0.1600 corpbleu_ko2en: 0.3058
+2023-01-11 16:35:36,181:INFO: Finished 19 epochs of training
+2023-01-11 17:12:18,167:INFO: Total time used: 6:34:53 Epoch 19 time used: 0:36:41 train loss: 6.1089 val loss: 0.0018 corpbleu_en2ko: 0.1611 corpbleu_ko2en: 0.3092
+2023-01-11 17:12:18,169:INFO: Finished 20 epochs of training
+2023-01-11 17:47:03,942:INFO: Total time used: 7:09:39 Epoch 20 time used: 0:34:45 train loss: 5.9722 val loss: 0.0018 corpbleu_en2ko: 0.1634 corpbleu_ko2en: 0.3127
+2023-01-11 17:47:03,943:INFO: Finished 21 epochs of training
+2023-01-11 18:23:15,187:INFO: Total time used: 7:45:50 Epoch 21 time used: 0:36:11 train loss: 5.8647 val loss: 0.0017 corpbleu_en2ko: 0.1655 corpbleu_ko2en: 0.3167
+2023-01-11 18:23:15,188:INFO: Finished 22 epochs of training
+2023-01-11 18:59:46,770:INFO: Total time used: 8:22:22 Epoch 22 time used: 0:36:31 train loss: 5.7749 val loss: 0.0017 corpbleu_en2ko: 0.1673 corpbleu_ko2en: 0.3190
+2023-01-11 18:59:46,772:INFO: Finished 23 epochs of training
+2023-01-11 19:35:04,973:INFO: Total time used: 8:57:40 Epoch 23 time used: 0:35:18 train loss: 5.6920 val loss: 0.0017 corpbleu_en2ko: 0.1692 corpbleu_ko2en: 0.3204
+2023-01-11 19:35:04,975:INFO: Finished 24 epochs of training
+2023-01-11 20:09:21,018:INFO: Total time used: 9:31:56 Epoch 24 time used: 0:34:16 train loss: 5.6227 val loss: 0.0017 corpbleu_en2ko: 0.1706 corpbleu_ko2en: 0.3231
+2023-01-11 20:09:32,149:INFO: Finished 25 epochs of training
+2023-01-11 20:45:45,052:INFO: Total time used: 10:08:20 Epoch 25 time used: 0:36:12 train loss: 5.5562 val loss: 0.0017 corpbleu_en2ko: 0.1726 corpbleu_ko2en: 0.3242
+2023-01-11 20:45:50,834:INFO: Finished 26 epochs of training
+2023-01-11 21:20:52,960:INFO: Total time used: 10:43:28 Epoch 26 time used: 0:35:02 train loss: 5.5013 val loss: 0.0017 corpbleu_en2ko: 0.1716 corpbleu_ko2en: 0.3239
+2023-01-11 21:20:52,961:INFO: Finished 27 epochs of training
+2023-01-11 21:56:12,185:INFO: Total time used: 11:18:47 Epoch 27 time used: 0:35:19 train loss: 5.4491 val loss: 0.0017 corpbleu_en2ko: 0.1745 corpbleu_ko2en: 0.3267
+2023-01-11 21:56:20,693:INFO: Finished 28 epochs of training
+2023-01-11 22:32:09,830:INFO: Total time used: 11:54:45 Epoch 28 time used: 0:35:49 train loss: 5.4051 val loss: 0.0017 corpbleu_en2ko: 0.1755 corpbleu_ko2en: 0.3288
+2023-01-11 22:32:17,946:INFO: Finished 29 epochs of training
+2023-01-11 23:08:49,342:INFO: Total time used: 12:31:24 Epoch 29 time used: 0:36:31 train loss: 5.3610 val loss: 0.0017 corpbleu_en2ko: 0.1752 corpbleu_ko2en: 0.3295
+2023-01-11 23:08:54,952:INFO: Finished 30 epochs of training
+2023-01-11 23:45:57,086:INFO: Total time used: 13:08:32 Epoch 30 time used: 0:37:02 train loss: 5.3231 val loss: 0.0017 corpbleu_en2ko: 0.1770 corpbleu_ko2en: 0.3314
+2023-01-11 23:46:05,806:INFO: Finished 31 epochs of training
+2023-01-12 00:22:27,319:INFO: Total time used: 13:45:02 Epoch 31 time used: 0:36:21 train loss: 5.2846 val loss: 0.0017 corpbleu_en2ko: 0.1782 corpbleu_ko2en: 0.3332
+2023-01-12 00:22:33,382:INFO: Finished 32 epochs of training
+2023-01-12 00:58:47,095:INFO: Total time used: 14:21:22 Epoch 32 time used: 0:36:13 train loss: 5.2497 val loss: 0.0017 corpbleu_en2ko: 0.1781 corpbleu_ko2en: 0.3351
+2023-01-12 00:58:55,587:INFO: Finished 33 epochs of training
+2023-01-12 01:34:46,845:INFO: Total time used: 14:57:22 Epoch 33 time used: 0:35:51 train loss: 5.2186 val loss: 0.0017 corpbleu_en2ko: 0.1788 corpbleu_ko2en: 0.3361
+2023-01-12 01:34:52,936:INFO: Finished 34 epochs of training
+2023-01-12 02:10:44,815:INFO: Total time used: 15:33:20 Epoch 34 time used: 0:35:51 train loss: 5.1859 val loss: 0.0017 corpbleu_en2ko: 0.1803 corpbleu_ko2en: 0.3348
+2023-01-12 02:10:50,508:INFO: Finished 35 epochs of training
+2023-01-12 02:47:02,564:INFO: Total time used: 16:09:37 Epoch 35 time used: 0:36:12 train loss: 5.1572 val loss: 0.0017 corpbleu_en2ko: 0.1821 corpbleu_ko2en: 0.3370
+2023-01-12 02:47:11,558:INFO: Finished 36 epochs of training
+2023-01-12 03:22:51,696:INFO: Total time used: 16:45:27 Epoch 36 time used: 0:35:40 train loss: 5.1272 val loss: 0.0017 corpbleu_en2ko: 0.1812 corpbleu_ko2en: 0.3392
+2023-01-12 03:22:57,665:INFO: Finished 37 epochs of training
+2023-01-12 03:58:45,886:INFO: Total time used: 17:21:21 Epoch 37 time used: 0:35:48 train loss: 5.1012 val loss: 0.0017 corpbleu_en2ko: 0.1819 corpbleu_ko2en: 0.3390
+2023-01-12 03:58:53,458:INFO: Finished 38 epochs of training
+2023-01-12 04:34:54,307:INFO: Total time used: 17:57:29 Epoch 38 time used: 0:36:00 train loss: 5.0810 val loss: 0.0016 corpbleu_en2ko: 0.1826 corpbleu_ko2en: 0.3406
+2023-01-12 04:35:01,820:INFO: Finished 39 epochs of training
+2023-01-12 05:10:29,938:INFO: Total time used: 18:33:05 Epoch 39 time used: 0:35:28 train loss: 5.0536 val loss: 0.0016 corpbleu_en2ko: 0.1838 corpbleu_ko2en: 0.3412
+2023-01-12 05:10:45,275:INFO: Finished 40 epochs of training
+2023-01-12 05:47:10,223:INFO: Total time used: 19:09:45 Epoch 40 time used: 0:36:24 train loss: 5.0309 val loss: 0.0016 corpbleu_en2ko: 0.1847 corpbleu_ko2en: 0.3439
+2023-01-12 05:47:15,465:INFO: Finished 41 epochs of training
+2023-01-12 06:23:23,079:INFO: Total time used: 19:45:58 Epoch 41 time used: 0:36:07 train loss: 5.0122 val loss: 0.0016 corpbleu_en2ko: 0.1854 corpbleu_ko2en: 0.3440
+2023-01-12 06:23:29,136:INFO: Finished 42 epochs of training
+2023-01-12 06:59:15,402:INFO: Total time used: 20:21:50 Epoch 42 time used: 0:35:46 train loss: 4.9875 val loss: 0.0016 corpbleu_en2ko: 0.1853 corpbleu_ko2en: 0.3450
+2023-01-12 06:59:27,357:INFO: Finished 43 epochs of training
+2023-01-12 07:34:23,460:INFO: Total time used: 20:56:58 Epoch 43 time used: 0:34:56 train loss: 4.9671 val loss: 0.0016 corpbleu_en2ko: 0.1855 corpbleu_ko2en: 0.3461
+2023-01-12 07:34:31,015:INFO: Finished 44 epochs of training
+2023-01-12 08:08:56,727:INFO: Total time used: 21:31:32 Epoch 44 time used: 0:34:25 train loss: 4.9506 val loss: 0.0016 corpbleu_en2ko: 0.1858 corpbleu_ko2en: 0.3458
+2023-01-12 08:08:56,728:INFO: Finished 45 epochs of training
+2023-01-12 08:44:31,865:INFO: Total time used: 22:07:07 Epoch 45 time used: 0:35:35 train loss: 4.9337 val loss: 0.0016 corpbleu_en2ko: 0.1874 corpbleu_ko2en: 0.3458
+2023-01-12 08:44:40,625:INFO: Finished 46 epochs of training
+2023-01-12 09:21:06,519:INFO: Total time used: 22:43:41 Epoch 46 time used: 0:36:25 train loss: 4.9138 val loss: 0.0016 corpbleu_en2ko: 0.1878 corpbleu_ko2en: 0.3463
+2023-01-12 09:21:16,336:INFO: Finished 47 epochs of training
+2023-01-12 09:58:41,880:INFO: Total time used: 23:21:17 Epoch 47 time used: 0:37:25 train loss: 4.8975 val loss: 0.0016 corpbleu_en2ko: 0.1877 corpbleu_ko2en: 0.3487
+2023-01-12 09:58:50,562:INFO: Finished 48 epochs of training
+2023-01-12 10:35:08,261:INFO: Total time used: 23:57:43 Epoch 48 time used: 0:36:17 train loss: 4.8803 val loss: 0.0016 corpbleu_en2ko: 0.1877 corpbleu_ko2en: 0.3483
+2023-01-12 10:35:08,261:INFO: Finished 49 epochs of training
+2023-01-12 11:11:44,348:INFO: Total time used: 1 day, 0:34:19 Epoch 49 time used: 0:36:36 train loss: 4.8644 val loss: 0.0016 corpbleu_en2ko: 0.1889 corpbleu_ko2en: 0.3498
+2023-01-12 11:11:50,765:INFO: Finished 50 epochs of training
+2023-01-12 11:49:06,013:INFO: Total time used: 1 day, 1:11:41 Epoch 50 time used: 0:37:15 train loss: 4.8481 val loss: 0.0016 corpbleu_en2ko: 0.1905 corpbleu_ko2en: 0.3499
+2023-01-12 11:49:13,895:INFO: Finished 51 epochs of training
+2023-01-12 12:26:08,754:INFO: Total time used: 1 day, 1:48:44 Epoch 51 time used: 0:36:54 train loss: 4.8334 val loss: 0.0016 corpbleu_en2ko: 0.1903 corpbleu_ko2en: 0.3513
+2023-01-12 12:26:17,199:INFO: Finished 52 epochs of training
+2023-01-12 13:02:07,775:INFO: Total time used: 1 day, 2:24:43 Epoch 52 time used: 0:35:50 train loss: 4.8228 val loss: 0.0016 corpbleu_en2ko: 0.1902 corpbleu_ko2en: 0.3519
+2023-01-12 13:02:15,162:INFO: Finished 53 epochs of training
+2023-01-12 13:39:04,059:INFO: Total time used: 1 day, 3:01:39 Epoch 53 time used: 0:36:48 train loss: 4.8048 val loss: 0.0016 corpbleu_en2ko: 0.1907 corpbleu_ko2en: 0.3523
+2023-01-12 13:39:10,462:INFO: Finished 54 epochs of training
+2023-01-12 14:15:23,057:INFO: Total time used: 1 day, 3:37:58 Epoch 54 time used: 0:36:12 train loss: 4.7958 val loss: 0.0016 corpbleu_en2ko: 0.1906 corpbleu_ko2en: 0.3524
+2023-01-12 14:15:34,746:INFO: Finished 55 epochs of training
+2023-01-12 14:51:40,603:INFO: Total time used: 1 day, 4:14:15 Epoch 55 time used: 0:36:05 train loss: 4.7791 val loss: 0.0016 corpbleu_en2ko: 0.1906 corpbleu_ko2en: 0.3540
+2023-01-12 14:51:49,289:INFO: Finished 56 epochs of training
+2023-01-12 15:28:15,677:INFO: Total time used: 1 day, 4:50:50 Epoch 56 time used: 0:36:26 train loss: 4.7667 val loss: 0.0016 corpbleu_en2ko: 0.1908 corpbleu_ko2en: 0.3529
+2023-01-12 15:28:15,678:INFO: Finished 57 epochs of training
+2023-01-12 16:04:55,493:INFO: Total time used: 1 day, 5:27:30 Epoch 57 time used: 0:36:39 train loss: 4.7555 val loss: 0.0016 corpbleu_en2ko: 0.1927 corpbleu_ko2en: 0.3558
+2023-01-12 16:05:13,245:INFO: Finished 58 epochs of training
+2023-01-12 16:42:15,296:INFO: Total time used: 1 day, 6:04:50 Epoch 58 time used: 0:37:02 train loss: 4.7414 val loss: 0.0016 corpbleu_en2ko: 0.1926 corpbleu_ko2en: 0.3547
+2023-01-12 16:42:15,297:INFO: Finished 59 epochs of training
+2023-01-12 17:18:57,782:INFO: Total time used: 1 day, 6:41:33 Epoch 59 time used: 0:36:42 train loss: 4.7308 val loss: 0.0016 corpbleu_en2ko: 0.1924 corpbleu_ko2en: 0.3544
+2023-01-12 17:18:57,783:INFO: Finished 60 epochs of training
+2023-01-12 17:56:01,780:INFO: Total time used: 1 day, 7:18:37 Epoch 60 time used: 0:37:03 train loss: 4.7188 val loss: 0.0016 corpbleu_en2ko: 0.1926 corpbleu_ko2en: 0.3564
+2023-01-12 17:56:18,661:INFO: Finished 61 epochs of training
+2023-01-12 18:32:35,686:INFO: Total time used: 1 day, 7:55:10 Epoch 61 time used: 0:36:17 train loss: 4.7035 val loss: 0.0016 corpbleu_en2ko: 0.1928 corpbleu_ko2en: 0.3562
+2023-01-12 18:32:35,687:INFO: Finished 62 epochs of training
+2023-01-12 19:10:11,604:INFO: Total time used: 1 day, 8:32:46 Epoch 62 time used: 0:37:35 train loss: 4.6993 val loss: 0.0016 corpbleu_en2ko: 0.1938 corpbleu_ko2en: 0.3570
+2023-01-12 19:10:21,325:INFO: Finished 63 epochs of training
+2023-01-12 19:46:58,929:INFO: Total time used: 1 day, 9:09:34 Epoch 63 time used: 0:36:37 train loss: 4.6861 val loss: 0.0016 corpbleu_en2ko: 0.1940 corpbleu_ko2en: 0.3566
+2023-01-12 19:46:58,929:INFO: Finished 64 epochs of training
+2023-01-12 20:23:44,843:INFO: Total time used: 1 day, 9:46:20 Epoch 64 time used: 0:36:45 train loss: 4.6742 val loss: 0.0016 corpbleu_en2ko: 0.1950 corpbleu_ko2en: 0.3579
+2023-01-12 20:23:50,894:INFO: Finished 65 epochs of training
+2023-01-13 08:03:12,418:INFO: Training model: trans_rhyer
+2023-01-13 08:28:41,459:INFO: Vocab size en/ko:9062/13240
+2023-01-13 08:53:24,921:INFO: train/val/test size: 2858/358/22864
+2023-01-13 09:08:12,534:INFO: Total time used: 0:14:23 Epoch 0 time used: 0:14:23 train loss: 6.9673 val loss: 0.0035 corpbleu_en2ko: 0.0149 corpbleu_ko2en: 0.0464
+2023-01-13 09:08:29,324:INFO: Finished 1 epochs of training
+2023-01-13 09:22:58,962:INFO: Total time used: 0:29:10 Epoch 1 time used: 0:14:29 train loss: 5.0243 val loss: 0.0029 corpbleu_en2ko: 0.0465 corpbleu_ko2en: 0.1186
+2023-01-13 09:23:05,576:INFO: Finished 2 epochs of training
+2023-01-13 09:37:34,513:INFO: Total time used: 0:43:45 Epoch 2 time used: 0:14:28 train loss: 4.2720 val loss: 0.0025 corpbleu_en2ko: 0.0761 corpbleu_ko2en: 0.1705
+2023-01-13 09:37:45,072:INFO: Finished 3 epochs of training
+2023-01-13 09:51:50,353:INFO: Total time used: 0:58:01 Epoch 3 time used: 0:14:05 train loss: 3.8385 val loss: 0.0023 corpbleu_en2ko: 0.0982 corpbleu_ko2en: 0.2083
+2023-01-13 09:52:02,211:INFO: Finished 4 epochs of training
+2023-01-13 10:06:25,772:INFO: Total time used: 1:12:37 Epoch 4 time used: 0:14:23 train loss: 3.5260 val loss: 0.0021 corpbleu_en2ko: 0.1116 corpbleu_ko2en: 0.2364
+2023-01-13 10:06:31,987:INFO: Finished 5 epochs of training
+2023-01-13 10:20:49,962:INFO: Total time used: 1:27:01 Epoch 5 time used: 0:14:17 train loss: 3.3173 val loss: 0.0020 corpbleu_en2ko: 0.1246 corpbleu_ko2en: 0.2551
+2023-01-13 10:20:58,548:INFO: Finished 6 epochs of training
+2023-01-13 10:35:40,037:INFO: Total time used: 1:41:51 Epoch 6 time used: 0:14:41 train loss: 3.1690 val loss: 0.0020 corpbleu_en2ko: 0.1341 corpbleu_ko2en: 0.2669
+2023-01-13 10:35:47,127:INFO: Finished 7 epochs of training
+2023-01-13 10:50:18,401:INFO: Total time used: 1:56:29 Epoch 7 time used: 0:14:31 train loss: 3.0567 val loss: 0.0019 corpbleu_en2ko: 0.1415 corpbleu_ko2en: 0.2805
+2023-01-13 10:50:24,339:INFO: Finished 8 epochs of training
+2023-01-13 11:05:17,301:INFO: Total time used: 2:11:28 Epoch 8 time used: 0:14:52 train loss: 2.9669 val loss: 0.0019 corpbleu_en2ko: 0.1457 corpbleu_ko2en: 0.2866
+2023-01-13 11:05:22,906:INFO: Finished 9 epochs of training
+2023-01-13 11:19:49,763:INFO: Total time used: 2:26:01 Epoch 9 time used: 0:14:26 train loss: 2.8927 val loss: 0.0018 corpbleu_en2ko: 0.1522 corpbleu_ko2en: 0.2954
+2023-01-13 11:19:55,719:INFO: Finished 10 epochs of training
+2023-01-13 11:36:50,070:INFO: Total time used: 2:43:01 Epoch 10 time used: 0:16:54 train loss: 2.8314 val loss: 0.0018 corpbleu_en2ko: 0.1564 corpbleu_ko2en: 0.3018
+2023-01-13 11:37:07,090:INFO: Finished 11 epochs of training
+2023-01-13 11:51:49,966:INFO: Total time used: 2:58:01 Epoch 11 time used: 0:14:42 train loss: 2.7780 val loss: 0.0018 corpbleu_en2ko: 0.1604 corpbleu_ko2en: 0.3087
+2023-01-13 11:51:58,947:INFO: Finished 12 epochs of training
+2023-01-13 12:06:17,360:INFO: Total time used: 3:12:28 Epoch 12 time used: 0:14:18 train loss: 2.7301 val loss: 0.0018 corpbleu_en2ko: 0.1634 corpbleu_ko2en: 0.3129
+2023-01-13 12:06:25,855:INFO: Finished 13 epochs of training
+2023-01-13 12:20:30,760:INFO: Total time used: 3:26:42 Epoch 13 time used: 0:14:04 train loss: 2.6893 val loss: 0.0017 corpbleu_en2ko: 0.1667 corpbleu_ko2en: 0.3181
+2023-01-13 12:20:37,820:INFO: Finished 14 epochs of training
+2023-01-13 12:35:03,357:INFO: Total time used: 3:41:14 Epoch 14 time used: 0:14:25 train loss: 2.6520 val loss: 0.0017 corpbleu_en2ko: 0.1696 corpbleu_ko2en: 0.3221
+2023-01-13 12:35:09,514:INFO: Finished 15 epochs of training
+2023-01-13 13:12:04,325:INFO: Total time used: 4:18:15 Epoch 15 time used: 0:36:54 train loss: 8.0508 val loss: 0.0018 corpbleu_en2ko: 0.1526 corpbleu_ko2en: 0.2946
+2023-01-13 13:12:04,327:INFO: Finished 16 epochs of training
+2023-01-13 13:48:58,140:INFO: Total time used: 4:55:09 Epoch 16 time used: 0:36:53 train loss: 6.9373 val loss: 0.0018 corpbleu_en2ko: 0.1552 corpbleu_ko2en: 0.2979
+2023-01-13 13:48:58,141:INFO: Finished 17 epochs of training
+2023-01-13 14:25:30,655:INFO: Total time used: 5:31:42 Epoch 17 time used: 0:36:32 train loss: 6.5253 val loss: 0.0018 corpbleu_en2ko: 0.1570 corpbleu_ko2en: 0.3034
+2023-01-13 14:25:30,656:INFO: Finished 18 epochs of training
+2023-01-13 15:03:40,419:INFO: Total time used: 6:09:51 Epoch 18 time used: 0:38:09 train loss: 6.2864 val loss: 0.0018 corpbleu_en2ko: 0.1600 corpbleu_ko2en: 0.3058
+2023-01-13 15:03:40,420:INFO: Finished 19 epochs of training
+2023-01-13 15:39:59,144:INFO: Total time used: 6:46:10 Epoch 19 time used: 0:36:18 train loss: 6.1089 val loss: 0.0018 corpbleu_en2ko: 0.1611 corpbleu_ko2en: 0.3092
+2023-01-13 15:39:59,145:INFO: Finished 20 epochs of training
+2023-01-13 16:18:09,092:INFO: Total time used: 7:24:20 Epoch 20 time used: 0:38:09 train loss: 5.9722 val loss: 0.0018 corpbleu_en2ko: 0.1634 corpbleu_ko2en: 0.3127
+2023-01-13 16:18:09,093:INFO: Finished 21 epochs of training
+2023-01-13 16:55:18,976:INFO: Total time used: 8:01:30 Epoch 21 time used: 0:37:09 train loss: 5.8647 val loss: 0.0017 corpbleu_en2ko: 0.1655 corpbleu_ko2en: 0.3167
+2023-01-13 16:55:18,977:INFO: Finished 22 epochs of training
+2023-01-13 17:32:54,450:INFO: Total time used: 8:39:05 Epoch 22 time used: 0:37:35 train loss: 5.7749 val loss: 0.0017 corpbleu_en2ko: 0.1673 corpbleu_ko2en: 0.3190
+2023-01-13 17:32:54,451:INFO: Finished 23 epochs of training
+2023-01-13 18:09:46,441:INFO: Total time used: 9:15:57 Epoch 23 time used: 0:36:51 train loss: 5.6920 val loss: 0.0017 corpbleu_en2ko: 0.1692 corpbleu_ko2en: 0.3204
+2023-01-13 18:09:46,441:INFO: Finished 24 epochs of training
+2023-01-13 18:46:59,497:INFO: Total time used: 9:53:10 Epoch 24 time used: 0:37:13 train loss: 5.6227 val loss: 0.0017 corpbleu_en2ko: 0.1706 corpbleu_ko2en: 0.3231
+2023-01-13 18:47:13,464:INFO: Finished 25 epochs of training
+2023-01-13 19:23:13,226:INFO: Total time used: 10:29:24 Epoch 25 time used: 0:35:59 train loss: 5.5562 val loss: 0.0017 corpbleu_en2ko: 0.1726 corpbleu_ko2en: 0.3242
+2023-01-13 19:23:21,046:INFO: Finished 26 epochs of training
+2023-01-13 19:59:04,784:INFO: Total time used: 11:05:16 Epoch 26 time used: 0:35:43 train loss: 5.5013 val loss: 0.0017 corpbleu_en2ko: 0.1716 corpbleu_ko2en: 0.3239
+2023-01-13 19:59:04,784:INFO: Finished 27 epochs of training
+2023-01-13 20:35:46,895:INFO: Total time used: 11:41:58 Epoch 27 time used: 0:36:42 train loss: 5.4491 val loss: 0.0017 corpbleu_en2ko: 0.1745 corpbleu_ko2en: 0.3267
+2023-01-13 20:36:00,484:INFO: Finished 28 epochs of training
+2023-01-13 21:12:13,416:INFO: Total time used: 12:18:24 Epoch 28 time used: 0:36:12 train loss: 5.4051 val loss: 0.0017 corpbleu_en2ko: 0.1755 corpbleu_ko2en: 0.3288
+2023-01-13 21:12:19,486:INFO: Finished 29 epochs of training
+2023-01-13 21:49:06,754:INFO: Total time used: 12:55:18 Epoch 29 time used: 0:36:47 train loss: 5.3610 val loss: 0.0017 corpbleu_en2ko: 0.1752 corpbleu_ko2en: 0.3295
+2023-01-13 21:49:12,743:INFO: Finished 30 epochs of training
+2023-01-13 22:25:37,682:INFO: Total time used: 13:31:49 Epoch 30 time used: 0:36:24 train loss: 5.3231 val loss: 0.0017 corpbleu_en2ko: 0.1770 corpbleu_ko2en: 0.3314
+2023-01-13 22:25:49,385:INFO: Finished 31 epochs of training
+2023-01-13 23:00:47,470:INFO: Total time used: 14:06:58 Epoch 31 time used: 0:34:58 train loss: 5.2846 val loss: 0.0017 corpbleu_en2ko: 0.1782 corpbleu_ko2en: 0.3332
+2023-01-13 23:00:54,759:INFO: Finished 32 epochs of training
+2023-01-13 23:36:55,332:INFO: Total time used: 14:43:06 Epoch 32 time used: 0:36:00 train loss: 5.2497 val loss: 0.0017 corpbleu_en2ko: 0.1781 corpbleu_ko2en: 0.3351
+2023-01-13 23:37:03,490:INFO: Finished 33 epochs of training
+2023-01-14 00:14:02,832:INFO: Total time used: 15:20:14 Epoch 33 time used: 0:36:59 train loss: 5.2186 val loss: 0.0017 corpbleu_en2ko: 0.1788 corpbleu_ko2en: 0.3361
+2023-01-14 00:14:09,197:INFO: Finished 34 epochs of training
+2023-01-14 00:50:55,662:INFO: Total time used: 15:57:07 Epoch 34 time used: 0:36:46 train loss: 5.1859 val loss: 0.0017 corpbleu_en2ko: 0.1803 corpbleu_ko2en: 0.3348
+2023-01-14 00:51:01,546:INFO: Finished 35 epochs of training
+2023-01-14 01:27:06,281:INFO: Total time used: 16:33:17 Epoch 35 time used: 0:36:04 train loss: 5.1572 val loss: 0.0017 corpbleu_en2ko: 0.1821 corpbleu_ko2en: 0.3370
+2023-01-14 01:27:18,063:INFO: Finished 36 epochs of training
+2023-01-14 02:03:39,151:INFO: Total time used: 17:09:50 Epoch 36 time used: 0:36:21 train loss: 5.1272 val loss: 0.0017 corpbleu_en2ko: 0.1812 corpbleu_ko2en: 0.3392
+2023-01-14 02:03:46,755:INFO: Finished 37 epochs of training
+2023-01-14 02:39:35,814:INFO: Total time used: 17:45:47 Epoch 37 time used: 0:35:49 train loss: 5.1012 val loss: 0.0017 corpbleu_en2ko: 0.1819 corpbleu_ko2en: 0.3390
+2023-01-14 02:39:44,366:INFO: Finished 38 epochs of training
+2023-01-14 03:15:20,306:INFO: Total time used: 18:21:31 Epoch 38 time used: 0:35:35 train loss: 5.0810 val loss: 0.0016 corpbleu_en2ko: 0.1826 corpbleu_ko2en: 0.3406
+2023-01-14 03:15:26,329:INFO: Finished 39 epochs of training
+2023-01-14 03:51:33,129:INFO: Total time used: 18:57:44 Epoch 39 time used: 0:36:06 train loss: 5.0536 val loss: 0.0016 corpbleu_en2ko: 0.1838 corpbleu_ko2en: 0.3412
+2023-01-14 03:51:39,065:INFO: Finished 40 epochs of training
+2023-01-14 04:27:53,721:INFO: Total time used: 19:34:05 Epoch 40 time used: 0:36:14 train loss: 5.0309 val loss: 0.0016 corpbleu_en2ko: 0.1847 corpbleu_ko2en: 0.3439
+2023-01-14 04:28:08,812:INFO: Finished 41 epochs of training
+2023-01-14 05:05:32,740:INFO: Total time used: 20:11:44 Epoch 41 time used: 0:37:23 train loss: 5.0122 val loss: 0.0016 corpbleu_en2ko: 0.1854 corpbleu_ko2en: 0.3440
+2023-01-14 05:05:47,581:INFO: Finished 42 epochs of training
+2023-01-14 05:42:34,397:INFO: Total time used: 20:48:45 Epoch 42 time used: 0:36:46 train loss: 4.9875 val loss: 0.0016 corpbleu_en2ko: 0.1853 corpbleu_ko2en: 0.3450
+2023-01-14 05:42:41,554:INFO: Finished 43 epochs of training
+2023-01-14 06:19:23,763:INFO: Total time used: 21:25:35 Epoch 43 time used: 0:36:42 train loss: 4.9671 val loss: 0.0016 corpbleu_en2ko: 0.1855 corpbleu_ko2en: 0.3461
+2023-01-14 06:19:29,985:INFO: Finished 44 epochs of training
+2023-01-14 06:56:22,753:INFO: Total time used: 22:02:34 Epoch 44 time used: 0:36:52 train loss: 4.9506 val loss: 0.0016 corpbleu_en2ko: 0.1858 corpbleu_ko2en: 0.3458
+2023-01-14 06:56:22,754:INFO: Finished 45 epochs of training
+2023-01-14 07:32:37,955:INFO: Total time used: 22:38:49 Epoch 45 time used: 0:36:15 train loss: 4.9337 val loss: 0.0016 corpbleu_en2ko: 0.1874 corpbleu_ko2en: 0.3458
+2023-01-14 07:32:51,797:INFO: Finished 46 epochs of training
+2023-01-14 08:09:02,222:INFO: Total time used: 23:15:13 Epoch 46 time used: 0:36:10 train loss: 4.9138 val loss: 0.0016 corpbleu_en2ko: 0.1878 corpbleu_ko2en: 0.3463
+2023-01-14 08:09:11,464:INFO: Finished 47 epochs of training
+2023-01-14 08:45:09,733:INFO: Total time used: 23:51:21 Epoch 47 time used: 0:35:58 train loss: 4.8975 val loss: 0.0016 corpbleu_en2ko: 0.1877 corpbleu_ko2en: 0.3487
+2023-01-14 08:45:18,938:INFO: Finished 48 epochs of training
+2023-01-14 09:21:55,947:INFO: Total time used: 1 day, 0:28:07 Epoch 48 time used: 0:36:37 train loss: 4.8803 val loss: 0.0016 corpbleu_en2ko: 0.1877 corpbleu_ko2en: 0.3483
+2023-01-14 09:21:55,948:INFO: Finished 49 epochs of training
+2023-01-14 09:58:07,282:INFO: Total time used: 1 day, 1:04:18 Epoch 49 time used: 0:36:11 train loss: 4.8644 val loss: 0.0016 corpbleu_en2ko: 0.1889 corpbleu_ko2en: 0.3498
+2023-01-14 09:58:14,418:INFO: Finished 50 epochs of training
+2023-01-14 10:36:09,522:INFO: Total time used: 1 day, 1:42:20 Epoch 50 time used: 0:37:55 train loss: 4.8481 val loss: 0.0016 corpbleu_en2ko: 0.1905 corpbleu_ko2en: 0.3499
+2023-01-14 10:36:17,640:INFO: Finished 51 epochs of training
+2023-01-14 11:14:06,094:INFO: Total time used: 1 day, 2:20:17 Epoch 51 time used: 0:37:48 train loss: 4.8334 val loss: 0.0016 corpbleu_en2ko: 0.1903 corpbleu_ko2en: 0.3513
+2023-01-14 11:14:13,350:INFO: Finished 52 epochs of training
+2023-01-14 11:51:34,999:INFO: Total time used: 1 day, 2:57:46 Epoch 52 time used: 0:37:21 train loss: 4.8228 val loss: 0.0016 corpbleu_en2ko: 0.1902 corpbleu_ko2en: 0.3519
+2023-01-14 11:51:43,949:INFO: Finished 53 epochs of training
+2023-01-14 12:28:51,660:INFO: Total time used: 1 day, 3:35:03 Epoch 53 time used: 0:37:07 train loss: 4.8048 val loss: 0.0016 corpbleu_en2ko: 0.1907 corpbleu_ko2en: 0.3523
+2023-01-14 12:28:58,124:INFO: Finished 54 epochs of training
+2023-01-14 13:05:18,730:INFO: Total time used: 1 day, 4:11:30 Epoch 54 time used: 0:36:20 train loss: 4.7958 val loss: 0.0016 corpbleu_en2ko: 0.1906 corpbleu_ko2en: 0.3524
+2023-01-14 13:05:26,322:INFO: Finished 55 epochs of training
+2023-01-14 13:43:15,531:INFO: Total time used: 1 day, 4:49:26 Epoch 55 time used: 0:37:49 train loss: 4.7791 val loss: 0.0016 corpbleu_en2ko: 0.1906 corpbleu_ko2en: 0.3540
+2023-01-14 13:43:35,421:INFO: Finished 56 epochs of training
+2023-01-14 14:20:28,776:INFO: Total time used: 1 day, 5:26:40 Epoch 56 time used: 0:36:53 train loss: 4.7667 val loss: 0.0016 corpbleu_en2ko: 0.1908 corpbleu_ko2en: 0.3529
+2023-01-14 14:20:28,777:INFO: Finished 57 epochs of training
+2023-01-14 14:56:34,604:INFO: Total time used: 1 day, 6:02:45 Epoch 57 time used: 0:36:05 train loss: 4.7555 val loss: 0.0016 corpbleu_en2ko: 0.1927 corpbleu_ko2en: 0.3558
+2023-01-14 14:56:45,443:INFO: Finished 58 epochs of training
+2023-01-14 15:33:29,558:INFO: Total time used: 1 day, 6:39:40 Epoch 58 time used: 0:36:44 train loss: 4.7414 val loss: 0.0016 corpbleu_en2ko: 0.1926 corpbleu_ko2en: 0.3547
+2023-01-14 15:33:29,558:INFO: Finished 59 epochs of training
+2023-01-14 16:09:49,886:INFO: Total time used: 1 day, 7:16:01 Epoch 59 time used: 0:36:20 train loss: 4.7308 val loss: 0.0016 corpbleu_en2ko: 0.1924 corpbleu_ko2en: 0.3544
+2023-01-14 16:09:49,887:INFO: Finished 60 epochs of training
+2023-01-14 16:45:58,238:INFO: Total time used: 1 day, 7:52:09 Epoch 60 time used: 0:36:08 train loss: 4.7188 val loss: 0.0016 corpbleu_en2ko: 0.1926 corpbleu_ko2en: 0.3564
+2023-01-14 16:46:07,099:INFO: Finished 61 epochs of training
+2023-01-14 17:21:29,229:INFO: Total time used: 1 day, 8:27:40 Epoch 61 time used: 0:35:22 train loss: 4.7035 val loss: 0.0016 corpbleu_en2ko: 0.1928 corpbleu_ko2en: 0.3562
+2023-01-14 17:21:29,230:INFO: Finished 62 epochs of training
+2023-01-14 17:56:50,431:INFO: Total time used: 1 day, 9:03:01 Epoch 62 time used: 0:35:21 train loss: 4.6993 val loss: 0.0016 corpbleu_en2ko: 0.1938 corpbleu_ko2en: 0.3570
+2023-01-14 17:57:00,048:INFO: Finished 63 epochs of training
+2023-01-14 18:33:36,673:INFO: Total time used: 1 day, 9:39:48 Epoch 63 time used: 0:36:36 train loss: 4.6861 val loss: 0.0016 corpbleu_en2ko: 0.1940 corpbleu_ko2en: 0.3566
+2023-01-14 18:33:36,674:INFO: Finished 64 epochs of training
+2023-01-14 19:11:56,052:INFO: Total time used: 1 day, 10:18:07 Epoch 64 time used: 0:38:19 train loss: 4.6742 val loss: 0.0016 corpbleu_en2ko: 0.1950 corpbleu_ko2en: 0.3579
+2023-01-14 19:12:03,011:INFO: Finished 65 epochs of training
+2023-01-14 19:47:13,102:INFO: Total time used: 1 day, 10:53:24 Epoch 65 time used: 0:35:10 train loss: 4.6677 val loss: 0.0016 corpbleu_en2ko: 0.1952 corpbleu_ko2en: 0.3577
+2023-01-14 19:47:13,103:INFO: Finished 66 epochs of training
+2023-01-14 20:23:31,524:INFO: Total time used: 1 day, 11:29:42 Epoch 66 time used: 0:36:18 train loss: 4.6547 val loss: 0.0016 corpbleu_en2ko: 0.1949 corpbleu_ko2en: 0.3575
+2023-01-14 20:23:31,525:INFO: Finished 67 epochs of training
+2023-01-14 20:59:36,473:INFO: Total time used: 1 day, 12:05:47 Epoch 67 time used: 0:36:04 train loss: 4.6443 val loss: 0.0016 corpbleu_en2ko: 0.1958 corpbleu_ko2en: 0.3592
+2023-01-14 20:59:48,117:INFO: Finished 68 epochs of training
+2023-01-14 21:36:33,777:INFO: Total time used: 1 day, 12:42:45 Epoch 68 time used: 0:36:45 train loss: 4.6342 val loss: 0.0016 corpbleu_en2ko: 0.1952 corpbleu_ko2en: 0.3592
+2023-01-14 21:36:33,778:INFO: Finished 69 epochs of training
+2023-01-14 22:12:35,949:INFO: Total time used: 1 day, 13:18:47 Epoch 69 time used: 0:36:02 train loss: 4.6253 val loss: 0.0016 corpbleu_en2ko: 0.1964 corpbleu_ko2en: 0.3610
+2023-01-14 22:12:48,155:INFO: Finished 70 epochs of training
+2023-01-14 22:50:25,280:INFO: Total time used: 1 day, 13:56:36 Epoch 70 time used: 0:37:37 train loss: 4.6177 val loss: 0.0016 corpbleu_en2ko: 0.1958 corpbleu_ko2en: 0.3607
+2023-01-14 22:50:25,280:INFO: Finished 71 epochs of training
+2023-01-14 23:26:30,514:INFO: Total time used: 1 day, 14:32:41 Epoch 71 time used: 0:36:05 train loss: 4.6075 val loss: 0.0016 corpbleu_en2ko: 0.1961 corpbleu_ko2en: 0.3596
+2023-01-14 23:26:30,515:INFO: Finished 72 epochs of training
+2023-01-15 00:02:52,330:INFO: Total time used: 1 day, 15:09:03 Epoch 72 time used: 0:36:21 train loss: 4.5993 val loss: 0.0016 corpbleu_en2ko: 0.1972 corpbleu_ko2en: 0.3608
+2023-01-15 00:03:06,856:INFO: Finished 73 epochs of training
+2023-01-15 00:39:57,671:INFO: Total time used: 1 day, 15:46:09 Epoch 73 time used: 0:36:50 train loss: 4.5904 val loss: 0.0016 corpbleu_en2ko: 0.1960 corpbleu_ko2en: 0.3611
+2023-01-15 00:39:57,671:INFO: Finished 74 epochs of training
+2023-01-15 01:17:10,466:INFO: Total time used: 1 day, 16:23:21 Epoch 74 time used: 0:37:12 train loss: 4.5812 val loss: 0.0016 corpbleu_en2ko: 0.1971 corpbleu_ko2en: 0.3623
+2023-01-15 01:17:17,379:INFO: Finished 75 epochs of training
+2023-01-15 01:55:06,462:INFO: Total time used: 1 day, 17:01:17 Epoch 75 time used: 0:37:49 train loss: 4.5718 val loss: 0.0016 corpbleu_en2ko: 0.1962 corpbleu_ko2en: 0.3632
+2023-01-15 01:55:06,462:INFO: Finished 76 epochs of training
+2023-01-15 02:32:33,974:INFO: Total time used: 1 day, 17:38:45 Epoch 76 time used: 0:37:27 train loss: 4.5639 val loss: 0.0016 corpbleu_en2ko: 0.1976 corpbleu_ko2en: 0.3633
+2023-01-15 02:32:47,098:INFO: Finished 77 epochs of training
+2023-01-15 03:08:44,281:INFO: Total time used: 1 day, 18:14:55 Epoch 77 time used: 0:35:57 train loss: 4.5567 val loss: 0.0016 corpbleu_en2ko: 0.1984 corpbleu_ko2en: 0.3643
+2023-01-15 03:08:51,064:INFO: Finished 78 epochs of training
+2023-01-15 03:44:25,167:INFO: Total time used: 1 day, 18:50:36 Epoch 78 time used: 0:35:34 train loss: 4.5489 val loss: 0.0016 corpbleu_en2ko: 0.1979 corpbleu_ko2en: 0.3632
+2023-01-15 03:44:25,168:INFO: Finished 79 epochs of training
+2023-01-15 04:21:48,046:INFO: Total time used: 1 day, 19:27:59 Epoch 79 time used: 0:37:22 train loss: 4.5404 val loss: 0.0016 corpbleu_en2ko: 0.1986 corpbleu_ko2en: 0.3631
+2023-01-15 04:21:48,048:INFO: Finished 80 epochs of training
+2023-01-15 04:58:11,175:INFO: Total time used: 1 day, 20:04:22 Epoch 80 time used: 0:36:23 train loss: 4.5350 val loss: 0.0016 corpbleu_en2ko: 0.1989 corpbleu_ko2en: 0.3633
+2023-01-15 04:58:11,175:INFO: Finished 81 epochs of training
+2023-01-15 05:35:11,895:INFO: Total time used: 1 day, 20:41:23 Epoch 81 time used: 0:37:00 train loss: 4.5267 val loss: 0.0016 corpbleu_en2ko: 0.1993 corpbleu_ko2en: 0.3630
+2023-01-15 05:35:11,896:INFO: Finished 82 epochs of training
+2023-01-15 06:12:17,333:INFO: Total time used: 1 day, 21:18:28 Epoch 82 time used: 0:37:05 train loss: 4.5171 val loss: 0.0016 corpbleu_en2ko: 0.1992 corpbleu_ko2en: 0.3647
+2023-01-15 06:12:29,631:INFO: Finished 83 epochs of training
+2023-01-15 06:49:39,734:INFO: Total time used: 1 day, 21:55:51 Epoch 83 time used: 0:37:10 train loss: 4.5116 val loss: 0.0016 corpbleu_en2ko: 0.1986 corpbleu_ko2en: 0.3636
+2023-01-15 06:49:39,735:INFO: Finished 84 epochs of training
+2023-01-15 07:27:16,663:INFO: Total time used: 1 day, 22:33:28 Epoch 84 time used: 0:37:36 train loss: 4.5075 val loss: 0.0016 corpbleu_en2ko: 0.1992 corpbleu_ko2en: 0.3631
+2023-01-15 07:27:16,664:INFO: Finished 85 epochs of training
+2023-01-15 08:05:18,687:INFO: Total time used: 1 day, 23:11:30 Epoch 85 time used: 0:38:02 train loss: 4.4986 val loss: 0.0016 corpbleu_en2ko: 0.1993 corpbleu_ko2en: 0.3652
+2023-01-15 08:05:32,785:INFO: Finished 86 epochs of training
+2023-01-15 08:42:36,572:INFO: Total time used: 1 day, 23:48:47 Epoch 86 time used: 0:37:03 train loss: 4.4927 val loss: 0.0016 corpbleu_en2ko: 0.1987 corpbleu_ko2en: 0.3659
+2023-01-15 08:42:42,757:INFO: Finished 87 epochs of training
+2023-01-15 09:19:58,884:INFO: Total time used: 2 days, 0:26:10 Epoch 87 time used: 0:37:16 train loss: 4.4814 val loss: 0.0016 corpbleu_en2ko: 0.2002 corpbleu_ko2en: 0.3656
+2023-01-15 09:20:06,168:INFO: Finished 88 epochs of training
+2023-01-15 09:57:27,040:INFO: Total time used: 2 days, 1:03:38 Epoch 88 time used: 0:37:20 train loss: 4.4785 val loss: 0.0016 corpbleu_en2ko: 0.2003 corpbleu_ko2en: 0.3655
+2023-01-15 09:57:34,186:INFO: Finished 89 epochs of training
+2023-01-15 10:34:12,872:INFO: Total time used: 2 days, 1:40:24 Epoch 89 time used: 0:36:38 train loss: 4.4725 val loss: 0.0016 corpbleu_en2ko: 0.1998 corpbleu_ko2en: 0.3664
+2023-01-15 10:34:28,187:INFO: Finished 90 epochs of training
+2023-01-15 11:11:29,929:INFO: Total time used: 2 days, 2:17:41 Epoch 90 time used: 0:37:01 train loss: 4.4657 val loss: 0.0016 corpbleu_en2ko: 0.2011 corpbleu_ko2en: 0.3664
+2023-01-15 11:11:36,485:INFO: Finished 91 epochs of training
+2023-01-15 11:47:59,613:INFO: Total time used: 2 days, 2:54:10 Epoch 91 time used: 0:36:23 train loss: 4.4602 val loss: 0.0016 corpbleu_en2ko: 0.2007 corpbleu_ko2en: 0.3667
+2023-01-15 11:47:59,614:INFO: Finished 92 epochs of training
+2023-01-15 12:24:17,644:INFO: Total time used: 2 days, 3:30:29 Epoch 92 time used: 0:36:18 train loss: 4.4515 val loss: 0.0016 corpbleu_en2ko: 0.2016 corpbleu_ko2en: 0.3679
+2023-01-15 12:24:31,809:INFO: Finished 93 epochs of training
+2023-01-15 13:00:56,045:INFO: Total time used: 2 days, 4:07:07 Epoch 93 time used: 0:36:24 train loss: 4.4493 val loss: 0.0016 corpbleu_en2ko: 0.2001 corpbleu_ko2en: 0.3682
+2023-01-15 13:00:56,045:INFO: Finished 94 epochs of training
+2023-01-15 13:37:52,569:INFO: Total time used: 2 days, 4:44:03 Epoch 94 time used: 0:36:56 train loss: 4.4422 val loss: 0.0016 corpbleu_en2ko: 0.2009 corpbleu_ko2en: 0.3674
+2023-01-15 13:37:52,570:INFO: Finished 95 epochs of training
+2023-01-15 14:14:50,498:INFO: Total time used: 2 days, 5:21:01 Epoch 95 time used: 0:36:57 train loss: 4.4350 val loss: 0.0016 corpbleu_en2ko: 0.2019 corpbleu_ko2en: 0.3686
+2023-01-15 14:15:00,492:INFO: Finished 96 epochs of training
+2023-01-15 14:52:56,244:INFO: Total time used: 2 days, 5:59:07 Epoch 96 time used: 0:37:55 train loss: 4.4305 val loss: 0.0016 corpbleu_en2ko: 0.2023 corpbleu_ko2en: 0.3680
+2023-01-15 14:52:56,245:INFO: Finished 97 epochs of training
+2023-01-15 15:29:07,460:INFO: Total time used: 2 days, 6:35:18 Epoch 97 time used: 0:36:11 train loss: 4.4251 val loss: 0.0016 corpbleu_en2ko: 0.2013 corpbleu_ko2en: 0.3684
+2023-01-15 15:29:07,461:INFO: Finished 98 epochs of training
+2023-01-15 16:04:32,165:INFO: Total time used: 2 days, 7:10:43 Epoch 98 time used: 0:35:24 train loss: 4.4183 val loss: 0.0016 corpbleu_en2ko: 0.2029 corpbleu_ko2en: 0.3690
+2023-01-15 16:04:42,148:INFO: Finished 99 epochs of training
+2023-01-15 16:41:01,788:INFO: Total time used: 2 days, 7:47:13 Epoch 99 time used: 0:36:19 train loss: 4.4124 val loss: 0.0016 corpbleu_en2ko: 0.2023 corpbleu_ko2en: 0.3693
+2023-01-15 16:41:01,789:INFO: Finished 100 epochs of training
+2023-01-15 16:41:01,792:INFO: Best corpus bleu score 0.5718 at epoch 98
+2023-01-15 16:41:01,793:INFO: ************ Start eval... ************
+2023-01-15 16:41:04,148:INFO: Use epoch 98 as the best model for testing
+2023-01-17 02:08:06,621:INFO: test_data: en2ko_corpbleu:0.19694987742771128 ko2en_corpbleu 0.32901328969035093

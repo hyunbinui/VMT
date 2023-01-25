@@ -104,13 +104,10 @@ class Tokenizer(object):
         return toks
 
 
-    ###########################################################
     def split_sentence_ko(self, sentence):
         '''Break sentence into a list of tokens -- Korean'''
         toks = mecab.morphs(sentence.strip())
         return toks
-    ###########################################################
-
 
 
     def encode_sentence(self, sentence):
@@ -203,7 +200,7 @@ def build_vocab(data_dir, language, min_count=5, start_vocab=base_vocab):
     count = Counter()
     t = Tokenizer(language)
 
-    with open(data_dir+'ko_train.json', 'r', encoding='utf-8') as file:
+    with open(data_dir+'kesvi_train.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
 
         for i in range(len(list(data.values()))):

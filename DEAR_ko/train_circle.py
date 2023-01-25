@@ -11,6 +11,8 @@ import json
 
 import torch
 import torch.nn as nn
+from torch.utils.tensorboard import SummaryWriter
+writer = SummaryWriter()
 
 from model import make_model
 from utils import set_logger,read_vocab,write_vocab,build_vocab,Tokenizer,clip_gradient,adjust_learning_rate
@@ -47,7 +49,7 @@ def setup(args, clear=False):
     # Build English vocabs
     if not os.path.exists(TRAIN_VOCAB_EN):
         write_vocab(build_vocab(args.DATA_DIR, language='en'),  TRAIN_VOCAB_EN)
-    #build Chinese vocabs
+    #build Korean vocabs
     if not os.path.exists(TRAIN_VOCAB_KO):
         write_vocab(build_vocab(args.DATA_DIR, language='ko'), TRAIN_VOCAB_KO)
 
@@ -151,6 +153,17 @@ def main(args):
                 best_epoch = epoch
 
             logging.info("Finished {0} epochs of training".format(epoch + 1))
+
+
+            writer.add_scalar('train_loss', train_loss, epoch)
+            writer.add_scalar('validation_loss', val_loss, epoch)
+            writer.add_scalar('corpbleu_en2ko', corpbleu_en2ko, epoch)
+            writer.add_scalar('corpbleu_ko2en', corpbleu_ko2en, epoch)
+            writer.add_scalar('corpbleu', corpbleu, epoch)
+            writer.add_scalar('best_val_bleu', best_val_bleu, epoch)
+
+            writer.flush()
+            writer.close()
 
             total_train_loss.append(train_loss)
             total_val_loss.append(val_loss)

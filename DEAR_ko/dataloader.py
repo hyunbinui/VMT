@@ -64,7 +64,7 @@ class vatex_dataset(Dataset):
         self.tok_en, self.tok_ko = tokenizers
         self.max_vid_len = max_vid_len
         self.split_type = split_type
-        with open(self.data_dir + 'label/' + 'vatex_vid_classes.json', 'r', encoding='utf-8') as file:
+        with open(self.data_dir + 'label/' + 'kesvi_action_label.json', 'r', encoding='utf-8') as file:
             self.vid_classes = json.load(file)
 
         with open(self.data_dir+file_path, 'r', encoding='utf-8') as file:
@@ -105,8 +105,8 @@ class vatex_dataset(Dataset):
 
 
 def get_loader(data_dir, tokenizers, split_type, batch_size, max_vid_len, pair, num_workers, pin_memory):
-    maps = {'train':['ko_train.json', 'action_feature'], 'val': ['ko_valid.json', 'action_feature'],
-        'test': ['test.json', 'action_feature']}
+    maps = {'train':['kesvi_train.json', 'extracted_features'], 'val': ['kesvi_val.json', 'extracted_features'],
+        'test': ['kesvi_test.json', 'extracted_features']}
     file_path, img_dir = maps[split_type]
     mydata = vatex_dataset(data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair)
     if split_type in ['train']:
