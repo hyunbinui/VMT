@@ -9,7 +9,7 @@ pip install webvtt-py
 ```
 ### 0. Clone the Repo
 ```
-! git clone https://github.com/hyunbinui/VMT-for-SUBS.git
+! git clone https://github.com/hyunbinui/VMT-all-at-once.git
 ```
 ### 1. Downloading Youtube Videos & Subtitles
 - create 'original_video' & 'original_subs' directory inside 'data' directory for Youtube videos and subtitles
