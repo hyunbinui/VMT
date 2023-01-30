@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=transparent&height=200&section=header&text=VMT-all-at-once&fontSize=80&fontColor=020079)
 
-## CREATING DATASET 
+## CREATE DATASET 
 ### *prerequisites*
 ```
 pip install moviepy
@@ -11,7 +11,7 @@ pip install webvtt-py
 ```
 ! git clone https://github.com/hyunbinui/VMT-all-at-once.git
 ```
-### 1. Downloading Youtube Videos & Subtitles
+### 1. Download Youtube Videos & Subtitles
 - create 'original_video' & 'original_subs' directory inside 'data' directory for Youtube videos and subtitles
 ```
 mkdir original_video
@@ -35,7 +35,7 @@ yt-dlp -a list.txt -o '/target_directory/original_video/%(id)s.%(ext)s' -S ext:m
 youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s' --skip-download -i 
 ```
 
-### 2. Constructing Dataset
+### 2. Construct Dataset
 - construct the text pair and video dataset by running the create_dataset.py file in 'data' directory
 ```
 python create_dataset.py --idpath ./list.txt
@@ -51,7 +51,7 @@ python create_dataset.py --idpath ./list.txt
 ```
 <br>
 
-## (OPTIONAL) EXTRACTING VIDEO FEATURES 
+## (OPTIONAL) EXTRACT VIDEO FEATURES 
 : most VMT models do not have internal video feature extractor. we need to extract video features ourselves and use them as an input.
 we need our own VIDEO FEATURE EXTRACTOR !
 
@@ -66,13 +66,13 @@ pip install --upgrade gluoncv
 - you've already done it, right ? 
 
 
-### 1. Extracting Video Features
+### 1. Extract Video Features
 - extract video features using the Inception-v1 I3D model pretrained on Kinetics 400 dataset and save them as .npy files. each video would be represented as a numpy array of size (1, num_of_segments, 1024).
 ```
 python action_feature_extractor.py
 ```
 
-### 2. Creating Action Labels
+### 2. Create Action Labels
 - some VMT models (i.e., [DEAR](https://www.sciencedirect.com/science/article/abs/pii/S0950705122002684)) take video action labels as an input. we could create action labels also by using pretrained I3D model.
 ```
 python action_label_extractor.py
