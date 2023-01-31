@@ -124,12 +124,12 @@ data
 ## About DEAR
 DEAR(Dual-lEvel bAck-tRanslation) is a model that investigated video-guided machine translation(VMT) task via dual-level back-translation. To be specific, it introduced sentence-level back-translation along with concept-level back-translation and implemented multi-pattern joint learning to improve translation performance.  
   
-If you want to know more about DEAR, check out [the official website](https://kbs-2021.wixsite.com/dear) and [this post](https://twigfarm.notion.site/Video-guided-machine-translation-via-dual-level-back-translation-83f9d235c5d7405e92d98342e8a0fb6b).  
+If you want to know more about DEAR, check out [the official website](https://kbs-2021.wixsite.com/dear) and [this post](https://velog.io/@hyunbinui/Video-guided-machine-translation-via-dual-level-back-translation).  
 <br>
 
 ## Create Dataset
-DEAR takes three elements as an input ; parallel sentence pairs, video action features, and video action labels.
-Follow [this repo](https://github.com/twigfarm/letr-tool-KESVI) to construct appropriate dataset.  
+DEAR takes three elements as an input ; parallel sentence pairs, video action features, and video action labels.  
+You've already created them, right ?
 <br>
 
 ## Train DEAR
@@ -153,13 +153,9 @@ python3 -m pip install konlpy
 sudo apt-get install curl git
 bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
 ```
-### 0. Clone the Repo
+### Train the Model
 ```
-! git clone https://github.com/twigfarm/letr-proto-DEAR.git
-```
-### 1. Train the Model
-```
-python train_circle.py
+python DEAR_ko/train_circle.py
 ```
   
 ## Reference
@@ -172,12 +168,12 @@ python train_circle.py
 ## About VRET
 VRET(Visual Relationship-Enhanced Transformer) is a model that investigated video-guided machine translation(VMT) task via visual relationship-enhanced transformer by constructing a semantic–visual relational graph as a cross-modal bridge. To be specific, graph convolutional network was deployed to capture the relationship among visual semantics to improve translation performance.  
   
-If you want to know more about VRET, check out [the official website](https://eswa-2021.wixsite.com/vret) and [this post](https://twigfarm.notion.site/Vision-talks-Visual-relationship-enhanced-transformer-for-video-guided-machine-translation-7bc8e6947ee04dcd8143635b682570a0).  
+If you want to know more about VRET, check out [the official website](https://eswa-2021.wixsite.com/vret) and [this post](https://velog.io/@hyunbinui/Vision-talks-Visual-relationship-enhanced-transformer-for-video-guided-machine-translation).  
 <br>
 
 ## Create Dataset
-DEAR takes three elements as an input ; parallel sentence pairs, scene nodes, and scene graphs.
-Follow [this repo](https://github.com/twigfarm/letr-tool-KESVI) to construct parallel sentence pairs, and follow [this repo](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch) to create scene nodes and scene graphs.   
+DEAR takes three elements as an input ; parallel sentence pairs, scene nodes, and scene graphs.  
+You've already created parallel sentence pairs and corresponding video clips, right ? Along with parallel sentence pairs, you additionally need to extract scene nodes and scene graphs from videos. Follow [this repo](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch) to extract scene nodes and scene graphs.   
 <br>
 
 ## Train VRET
@@ -190,14 +186,10 @@ pip install torch
 - install TrTokenizer  
 ```
 pip install trtokenizer
+```  
+### Train the Model
 ```
-### 0. Clone the Repo
-```
-! git clone https://github.com/twigfarm/letr-proto-VRET.git
-```
-### 1. Train the Model
-```
-python train.py
+python VRET/train.py
 ```
   
 ## Reference
