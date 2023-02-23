@@ -180,12 +180,26 @@ You've already created parallel sentence pairs and corresponding video clips, ri
 ## Train VRET
 ### *prerequisites*
 - basics  
-: python==3.6+ recommended. I used python 3.9.12  
-  pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
+: python 3.6+ recommended. I used python 3.9.12   
+ torch==1.0.0+ recommended. I used torch==1.7.1+cu110
+
+- install konlpy + MeCab (for VRET_ko)
+: this may be troublesome, but our friend google is always there for you. good luck !
 ```
-pip install torch 
+# konlpy
+sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl  # install Java 1.8 or up
+
+python3 -m pip install --upgrade pip
+python3 -m pip install konlpy   
 ```
-- install TrTokenizer  
+```
+# MeCab
+sudo apt-get install curl git
+bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
+# if apt-get update fails due to NO_PUBKEY error, run the following code and try again
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+```
+- install TrTokenizer (for VRET)
 ```
 pip install trtokenizer
 ```  
