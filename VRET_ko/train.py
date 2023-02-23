@@ -13,6 +13,8 @@ import json
 
 import torch
 import torch.nn as nn
+from torch.utils.tensorboard import SummaryWriter
+writer = SummaryWriter()
 
 from model import make_model
 from utils import set_logger,read_vocab,write_vocab,build_vocab,Tokenizer,clip_gradient,adjust_learning_rate
@@ -157,6 +159,16 @@ def main(args):
                 best_epoch = epoch
 
             logging.info("Finished {0} epochs of training".format(epoch+1))
+
+
+            writer.add_scalar('train_loss', train_loss, epoch)
+            writer.add_scalar('validation_loss', val_loss, epoch)
+            writer.add_scalar('corpbleu', corpbleu, epoch)
+            writer.add_scalar('best_val_bleu', best_val_bleu, epoch)
+
+            writer.flush()
+            writer.close()
+
 
             total_train_loss.append(train_loss)
             total_val_loss.append(val_loss)
