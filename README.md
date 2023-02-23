@@ -135,7 +135,8 @@ You've already created them, right ?
 ## Train DEAR
 ### *prerequisites*
 - basics  
-: pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
+: python==3.6+ recommended. I used python 3.9.12
+  pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
 ```
 pip install torch 
 ```
@@ -179,7 +180,8 @@ You've already created parallel sentence pairs and corresponding video clips, ri
 ## Train VRET
 ### *prerequisites*
 - basics  
-: pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
+: python==3.6+ recommended. I used python 3.9.12
+  pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
 ```
 pip install torch 
 ```

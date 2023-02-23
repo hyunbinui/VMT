@@ -54,7 +54,7 @@ def load_video_features(fpath, max_length, classes):
         return img, img_mask, final_classes
 
 
-class vatex_dataset(Dataset):
+class kesvi_dataset(Dataset):
     def __init__(self, data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair):
         en, ko = pair
         maps = {'en': 'en', 'ko': 'ko'}
@@ -108,7 +108,7 @@ def get_loader(data_dir, tokenizers, split_type, batch_size, max_vid_len, pair, 
     maps = {'train':['kesvi_train.json', 'extracted_features'], 'val': ['kesvi_val.json', 'extracted_features'],
         'test': ['kesvi_test.json', 'extracted_features']}
     file_path, img_dir = maps[split_type]
-    mydata = vatex_dataset(data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair)
+    mydata = kesvi_dataset(data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair)
     if split_type in ['train']:
         shuffle = True
     elif split_type in ['val', 'test']:
