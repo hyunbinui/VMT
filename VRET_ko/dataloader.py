@@ -7,7 +7,7 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import torch 
 from torch.utils.data import Dataset, DataLoader
 import random
-from .utils import padding_idx
+from utils import padding_idx
 
 ########################################################################
 # scene node 결측치 처리

@@ -14,13 +14,13 @@ import json
 import torch
 import torch.nn as nn
 
-from VRET.model import make_model
-from VRET.utils import set_logger,read_vocab,write_vocab,build_vocab,Tokenizer,clip_gradient,adjust_learning_rate
-from VRET.dataloader import create_split_loaders
+from model import make_model
+from utils import set_logger,read_vocab,write_vocab,build_vocab,Tokenizer,clip_gradient,adjust_learning_rate
+from dataloader import create_split_loaders
 from nltk.translate.bleu_score import corpus_bleu, sentence_bleu, SmoothingFunction
 cc = SmoothingFunction()
-from VRET.label_smoothing import *
-from VRET.utils import padding_idx, sos_idx, eos_idx, unk_idx, NoamOpt, SimpleLossCompute, beam_search_decode
+from label_smoothing import *
+from utils import padding_idx, sos_idx, eos_idx, unk_idx, NoamOpt, SimpleLossCompute, beam_search_decode
 from tqdm import tqdm
 
 src_input, tgt_input = 'ko', 'en'
