@@ -183,7 +183,7 @@ You've already created parallel sentence pairs and corresponding video clips, ri
 : python 3.6+ recommended. I used python 3.9.12   
  torch==1.0.0+ recommended. I used torch==1.7.1+cu110
 
-- install konlpy + MeCab (for VRET_ko)
+- install konlpy + MeCab (for VRET_ko)  
 : this may be troublesome, but our friend google is always there for you. good luck !
 ```
 # konlpy
