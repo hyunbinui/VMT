@@ -1,6 +1,6 @@
 import sys
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]= "3"
+os.environ["CUDA_VISIBLE_DEVICES"]= "2"
 
 import argparse
 import time
@@ -164,6 +164,7 @@ def main(args):
 
             writer.flush()
             writer.close()
+
 
             total_train_loss.append(train_loss)
             total_val_loss.append(val_loss)

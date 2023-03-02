@@ -125,6 +125,8 @@ data
 DEAR(Dual-lEvel bAck-tRanslation) is a model that investigated video-guided machine translation(VMT) task via dual-level back-translation. To be specific, it introduced sentence-level back-translation along with concept-level back-translation and implemented multi-pattern joint learning to improve translation performance.  
   
 If you want to know more about DEAR, check out [the official website](https://kbs-2021.wixsite.com/dear) and [this post](https://velog.io/@hyunbinui/Video-guided-machine-translation-via-dual-level-back-translation).  
+
+\+ There are two DEAR folders in this repo. To clarify, 'DEAR' folder contains en ↔ zh translation model, while 'DEAR_ko contains ko ↔ en translation model.
 <br>
 
 ## Create Dataset
@@ -140,7 +142,7 @@ You've already created them, right ?
 ```
 pip install torch 
 ```
-- install konlpy + MeCab  
+- install konlpy + MeCab (for DEAR_ko)  
 : this may be troublesome, but our friend google is always there for you. good luck !
 ```
 # konlpy
@@ -158,7 +160,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
 ```
 ### Train the Model
 ```
-python DEAR_ko/train_circle.py
+python train_circle.py
 ```
   
 ## Reference
@@ -172,6 +174,8 @@ python DEAR_ko/train_circle.py
 VRET(Visual Relationship-Enhanced Transformer) is a model that investigated video-guided machine translation(VMT) task via visual relationship-enhanced transformer by constructing a semantic–visual relational graph as a cross-modal bridge. To be specific, graph convolutional network was deployed to capture the relationship among visual semantics to improve translation performance.  
   
 If you want to know more about VRET, check out [the official website](https://eswa-2021.wixsite.com/vret) and [this post](https://velog.io/@hyunbinui/Vision-talks-Visual-relationship-enhanced-transformer-for-video-guided-machine-translation).  
+
+\+ There are two VRET folders in this repo. To clarify, 'VRET' folder contains tr → en translation model, while 'VRET_ko contains ko → en translation model.
 <br>
 
 ## Create Dataset
@@ -208,7 +212,7 @@ pip install trtokenizer
 ```  
 ### Train the Model
 ```
-python VRET/train.py
+python train.py
 ```
   
 ## Reference

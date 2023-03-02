@@ -210,8 +210,6 @@ def build_vocab(data_dir, language, min_count=5, start_vocab=base_vocab):
                 break
         return vocab
 
-
-
 def write_vocab(vocab, path):
     print ('Writing vocab of size %d to %s' % (len(vocab),path))
     with open(path, 'w') as f:

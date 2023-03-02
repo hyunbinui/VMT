@@ -10,41 +10,27 @@ import random
 from utils import padding_idx
 
 
-# def load_video_features(fpath, max_length):
-#     feats = np.load(fpath, encoding='latin1')  # encoding='latin1' to handle the inconsistency between python 2 and 3
-
-#     if feats.shape[0] < max_length:
-#         dis = max_length - feats.shape[0]
-#         feats = np.lib.pad(feats, ((0, dis), (0, 0)), 'constant', constant_values=0)
-#     elif feats.shape[0] > max_length:
-#         inds = sorted(random.sample(range(feats.shape[0]), max_length))
-#         feats = feats[inds]
-#     assert feats.shape[0] == max_length
-#     return np.float32(feats)
-
 def load_video_features(fpath, max_length):
     feats = np.load(fpath, encoding='latin1')  # encoding='latin1' to handle the inconsistency between python 2 and 3
     if feats.shape[0] < max_length:
         dis = max_length - feats.shape[0]
-        feats = np.lib.pad(feats, ((0, dis), (0, 0), (0, 0)), 'constant', constant_values=0)  # 前feats.shape[0]行，为真正的特征，且顺序没有变
+        feats = np.lib.pad(feats, ((0, dis), (0, 0), (0, 0)), 'constant', constant_values=0) 
     elif feats.shape[0] > max_length:
-        inds = sorted(random.sample(range(feats.shape[0]), max_length))   # inds对应的类别需要被记录下来
+        inds = sorted(random.sample(range(feats.shape[0]), max_length))   
         feats = feats[inds]
     assert feats.shape[0] == max_length
     img = torch.from_numpy(np.float32(feats))  # torch.Size([32, 1024])
 
-    # 构建img_mask
     # img_mask = (torch.sum(img != 1, dim=1) != 0).unsqueeze(-2)  # torch.Size([1, 32])
     # img = img * img_mask.squeeze().unsqueeze(-1).expand_as(img).float()  # torch.Size([32, 1024])
 
     return img
 
-class vatex_dataset(Dataset):
-    def __init__(self, data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair):
+class MSVD_dataset(Dataset):
+    def __init__(self, data_dir, file_path, split_type, tokenizers, max_vid_len, pair):
         src, tgt = pair
         maps = {'en':'en', 'tr':'tr'}
         self.data_dir = data_dir
-        self.img_dir = img_dir
         # load tokenizer
         self.tok_src, self.tok_tgt = tokenizers
         self.max_vid_len = max_vid_len
@@ -83,10 +69,10 @@ class vatex_dataset(Dataset):
 
 
 def get_loader(data_dir, tokenizers, split_type, batch_size, max_vid_len, pair, num_workers, pin_memory):
-    maps = {'train':['train.csv', 'trainval'], 'val': ['val.csv', 'trainval'],
-        'test': ['test.csv', 'trainval']}
-    file_path, img_dir = maps[split_type]
-    mydata = vatex_dataset(data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair)
+    maps = {'train':'train.csv', 'val': 'val.csv',
+        'test': 'test.csv'}
+    file_path = maps[split_type]
+    mydata = MSVD_dataset(data_dir, file_path, split_type, tokenizers, max_vid_len, pair)
     if split_type in ['train']:
         shuffle = True
     elif split_type in ['val', 'test']:
@@ -102,4 +88,3 @@ def create_split_loaders(data_dir, tokenizers, batch_size, max_vid_len, pair, nu
     # test_loader = [0]
 
     return train_loader, val_loader, test_loader
-

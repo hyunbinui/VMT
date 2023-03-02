@@ -1,11 +1,15 @@
 import json
 import numpy as np
+import pandas as pd
+
 import os 
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 import torch 
 from torch.utils.data import Dataset, DataLoader
 import random
 from utils import padding_idx
+
 
 def load_video_features(fpath, max_length):
     feats = np.load(fpath, encoding='latin1')  # encoding='latin1' to handle the inconsistency between python 2 and 3
@@ -18,27 +22,22 @@ def load_video_features(fpath, max_length):
     assert feats.shape[0] == max_length
     return np.float32(feats)
 
-class vatex_dataset(Dataset):
-    def __init__(self, data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair):
+
+class MSVD_dataset(Dataset):
+    def __init__(self, data_dir, file_path, split_type, tokenizers, max_vid_len, pair):
         src, tgt = pair
+        maps = {'en':'en', 'tr':'tr'}
         self.data_dir = data_dir
-        self.img_dir = img_dir
         # load tokenizer
         self.tok_src, self.tok_tgt = tokenizers
         self.max_vid_len = max_vid_len
         self.split_type = split_type
 
-        with open(self.data_dir+file_path, 'r') as file:
-            data = json.load(file)
-        self.srccaps, self.tgtcaps = [], []
-        self.sent_ids = []
-        for d in data:
-            srccap = d[maps[src]]
-            self.srccaps.extend(srccap)
-            sent_id = [''.join((d['videoID'], '&', str(i))) for i in range(len(srccap))]
-            self.sent_ids.extend(sent_id)
-            tgtcap = d[maps[tgt]]
-            self.tgtcaps.extend(tgtcap)
+        df = pd.read_csv(self.data_dir+'label/'+file_path)
+
+        self.srccaps = df[maps['tr']].tolist()
+        self.tgtcaps = df[maps['en']].tolist()
+        self.sent_ids = df['vid_id'].tolist()
 
     def __len__(self):
         return len(self.srccaps)
@@ -46,12 +45,12 @@ class vatex_dataset(Dataset):
 
     def __getitem__(self, idx):
         str_srccap,  sent_id = self.srccaps[idx], self.sent_ids[idx]
-        vid = sent_id[:-2]
+        vid = sent_id.split('@')[0]
         srccap, srccap_mask, caplen_src = self.tok_src.encode_sentence(str_srccap)
         srcref = self.tok_src.encode_sentence_nopad_2str(str_srccap)
 
-        s_video_feature = load_video_features(os.path.join(self.data_dir, 'scene_node_semantic', vid + '.npy'), self.max_vid_len)
-        s_video_graph = load_video_features(os.path.join(self.data_dir, 'scene_v_graph', vid + '.npy'), self.max_vid_len)
+        s_video_feature = load_video_features(os.path.join(self.data_dir, 'video_features', 'scene_node', vid + '.npy'), self.max_vid_len) 
+        s_video_graph = load_video_features(os.path.join(self.data_dir, 'video_features', 'scene_v_graph', vid + '.npy'), self.max_vid_len)  
 
         if self.split_type != 'test':
             str_tgtcap = self.tgtcaps[idx]
@@ -67,10 +66,10 @@ class vatex_dataset(Dataset):
 
 
 def get_loader(data_dir, tokenizers, split_type, batch_size, max_vid_len, pair, num_workers, pin_memory):
-    maps = {'train':['vatex_train_data.json', 'trainval'], 'val': ['vatex_valid_data.json', 'trainval'],
-        'test': ['vatex_test_data.json', 'trainval']}
-    file_path, img_dir = maps[split_type]
-    mydata = vatex_dataset(data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair)
+    maps = {'train':'train.csv', 'val': 'val.csv',
+        'test': 'test.csv'}
+    file_path = maps[split_type]
+    mydata = MSVD_dataset(data_dir, file_path, split_type, tokenizers, max_vid_len, pair)
     if split_type in ['train']:
         shuffle = True
     elif split_type in ['val', 'test']:
@@ -86,4 +85,3 @@ def create_split_loaders(data_dir, tokenizers, batch_size, max_vid_len, pair, nu
     # test_loader = [0]
 
     return train_loader, val_loader, test_loader
-

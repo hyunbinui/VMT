@@ -18,27 +18,24 @@ def load_video_features(fpath, max_length):
     assert feats.shape[0] == max_length
     return np.float32(feats)
 
-class vatex_dataset(Dataset):
-    def __init__(self, data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair):
+class kesvi_dataset(Dataset):
+    def __init__(self, data_dir, file_path, split_type, tokenizers, max_vid_len, pair):
         src, tgt = pair
+        maps = {'en':'en', 'ko':'ko'}
         self.data_dir = data_dir
-        self.img_dir = img_dir
         # load tokenizer
         self.tok_src, self.tok_tgt = tokenizers
         self.max_vid_len = max_vid_len
         self.split_type = split_type
 
-        with open(self.data_dir+file_path, 'r') as file:
+        with open(self.data_dir+file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
+
         self.srccaps, self.tgtcaps = [], []
-        self.sent_ids = []
-        for d in data:
-            srccap = d[maps[src]]
-            self.srccaps.extend(srccap)
-            sent_id = [''.join((d['videoID'], '&', str(i))) for i in range(len(srccap))]
-            self.sent_ids.extend(sent_id)
-            tgtcap = d[maps[tgt]]
-            self.tgtcaps.extend(tgtcap)
+        self.sent_ids = list(data.keys())
+        for i in range(len(list(data.values()))):
+            self.srccaps.append(list(data.values())[i][maps['ko']])
+            self.tgtcaps.append(list(data.values())[i][maps['en']])
 
     def __len__(self):
         return len(self.srccaps)
@@ -50,14 +47,17 @@ class vatex_dataset(Dataset):
         srccap, srccap_mask, caplen_src = self.tok_src.encode_sentence(str_srccap)
         srcref = self.tok_src.encode_sentence_nopad_2str(str_srccap)
 
-        s_video_feature = load_video_features(os.path.join(self.data_dir, 'scene_node_semantic', vid + '.npy'), self.max_vid_len)
-        s_video_graph = load_video_features(os.path.join(self.data_dir, 'scene_v_graph', vid + '.npy'), self.max_vid_len)
+        try :
+            s_video_feature = load_video_features(os.path.join(self.data_dir, 'video_features', 'scene_node', vid + '.npy'), self.max_vid_len) 
+            s_video_graph = load_video_features(os.path.join(self.data_dir, 'video_features', 'scene_v_graph', vid + '.npy'), self.max_vid_len)  
+        except FileNotFoundError :
+            s_video_feature = load_fake_scene_node()
+            s_video_graph = load_fake_scene_graph()
 
         if self.split_type != 'test':
             str_tgtcap = self.tgtcaps[idx]
             tgtcap, tgt_mask, caplen_tgt = self.tok_tgt.encode_sentence(str_tgtcap, flag='TRG')
             tgtref = self.tok_tgt.encode_sentence_nopad_2str(str_tgtcap)
-
             return srccap, srccap_mask, (s_video_graph, s_video_feature), tgtcap, tgt_mask, caplen_tgt, srcref, tgtref
         else:
             str_tgtcap = self.tgtcaps[idx]
@@ -67,10 +67,10 @@ class vatex_dataset(Dataset):
 
 
 def get_loader(data_dir, tokenizers, split_type, batch_size, max_vid_len, pair, num_workers, pin_memory):
-    maps = {'train':['vatex_train_data.json', 'trainval'], 'val': ['vatex_valid_data.json', 'trainval'],
-        'test': ['vatex_test_data.json', 'trainval']}
-    file_path, img_dir = maps[split_type]
-    mydata = vatex_dataset(data_dir, file_path, img_dir, split_type, tokenizers, max_vid_len, pair)
+    maps = {'train':'kesvi_train.json', 'val': 'kesvi_val.json',
+        'test': 'kesvi_test.json'}
+    file_path = maps[split_type]
+    mydata = kesvi_dataset(data_dir, file_path, split_type, tokenizers, max_vid_len, pair)
     if split_type in ['train']:
         shuffle = True
     elif split_type in ['val', 'test']:
@@ -83,7 +83,5 @@ def create_split_loaders(data_dir, tokenizers, batch_size, max_vid_len, pair, nu
     train_loader = get_loader(data_dir, tokenizers, 'train', batch_size, max_vid_len, pair, num_workers, pin_memory)
     val_loader = get_loader(data_dir, tokenizers, 'val', batch_size, max_vid_len, pair, num_workers, pin_memory)
     test_loader = get_loader(data_dir, tokenizers, 'test', 1, max_vid_len, pair, num_workers, pin_memory)
-    # test_loader = [0]
 
-    return train_loader, val_loader, test_loader
-
+    return train_loader, val_loader, test_loader 
