@@ -152,7 +152,7 @@ python3 -m pip install konlpy
 ```
 # MeCab
 sudo apt-get install curl git
-bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
+bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh) 
 # if apt-get update fails due to NO_PUBKEY error, run the following code and try again
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
 ```
