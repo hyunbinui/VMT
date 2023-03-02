@@ -153,6 +153,8 @@ python3 -m pip install konlpy
 # MeCab
 sudo apt-get install curl git
 bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
+# if apt-get update fails due to NO_PUBKEY error, run the following code and try again
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
 ```
 ### Train the Model
 ```
@@ -173,7 +175,8 @@ If you want to know more about VRET, check out [the official website](https://es
 <br>
 
 ## Create Dataset
-DEAR takes three elements as an input ; parallel sentence pairs, scene nodes, and scene graphs.  
+VRET takes three elements as an input ; parallel sentence pairs, scene nodes, and scene graphs.  
+  
 You've already created parallel sentence pairs and corresponding video clips, right ? Along with parallel sentence pairs, you additionally need to extract scene nodes and scene graphs from videos. Follow [this repo](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch) to extract scene nodes and scene graphs.   
 <br>
 

@@ -93,7 +93,7 @@ if __name__ == "__main__":
     parser.add_argument('--max_interval', type=int, default=120, help='max interval of video clip')
     parser.add_argument('--overlap', type=int, default=25, help='overlap')
 
-    parser.add_argument('--rgb_weights_path', type=str, default='./VMT-for-SUBS/action_feature_extractor/model_rgb.pth', help='Path to rgb model state_dict')
+    parser.add_argument('--rgb_weights_path', type=str, default='./VMT-all-at-once/action_feature_extractor/model_rgb.pth', help='Path to rgb model state_dict')
     parser.add_argument('--video_dir', type=str, default='./dataset/video_data', help='directory that contains video clips')
     parser.add_argument('--out_dir', type=str, default='./dataset/action_features/', help='directory for extracted action features')
     args = parser.parse_args()
