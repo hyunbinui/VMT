@@ -13,4 +13,8 @@ You must make data repos like following.
                   ├── YouTubeID_StartTime_EndTime.npy
                   └── ...    
 
+[Annotation Style]
 
+- {train, test, valid}_data.csv
+vid_id,tr,en
+eyhzdC936uk_15_27@1,köpekle oynayan bir çocuk,a boy playing with dog
