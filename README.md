@@ -13,42 +13,42 @@ pip install webvtt-py
 ```
 ### 1. Download Youtube Videos & Subtitles
 - create 'original_video' & 'original_subs' directory inside 'data' directory for Youtube videos and subtitles
-```
-mkdir original_video
-mkdir original_subs
-```
+  ```
+  mkdir original_video
+  mkdir original_subs
+  ```
 - (recommendation) get video ids from playlist
-```
-# playlist → youtube ids → txt file
-youtube-dl --get-id [playlist link] -i >> list.txt
-```
+  ```
+  # playlist → youtube ids → txt file
+  youtube-dl --get-id [playlist link] -i >> list.txt
+  ```
 - download videos / subtitles (en-ko) from youtube by using [youtube-dl](https://github.com/ytdl-org/youtube-dl)
 
-```
-youtube-dl -a list.txt -o '/target_directory/original_video/%(id)s.%(ext)s' --rm-cache-dir --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s'
-```
+  ```
+  youtube-dl -a list.txt -o '/target_directory/original_video/%(id)s.%(ext)s' --rm-cache-dir --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s'
+  ```
 
 - if youtube-dl is way too slow, try using [yt-dlp](https://github.com/yt-dlp/yt-dlp) for downloading videos
 
-```
-yt-dlp -a list.txt -o '/target_directory/original_video/%(id)s.%(ext)s' -S ext:mp4:m4a -i
-youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s' --skip-download -i 
-```
+  ```
+  yt-dlp -a list.txt -o '/target_directory/original_video/%(id)s.%(ext)s' -S ext:mp4:m4a -i
+  youtube-dl -a list.txt --write-srt --sub-lang en,ko -o '/target_directory/original_subs/%(id)s.%(ext)s' --skip-download -i 
+  ```
 
 ### 2. Construct Dataset
 - construct the text pair and video dataset by running the create_dataset.py file in 'data' directory
-```
-python create_dataset.py --idpath ./list.txt
-```
+  ```
+  python create_dataset.py --idpath ./list.txt
+  ```
 - cf. text_data.json annotation format
-```
-{
-  'YouTubeID_StartTime_EndTime': {
-    'ko' : 'Parallel Korean Caption',
-    'en' : 'Parallel English Caption'},
-    ...
-}
-```
+  ```
+  {
+    'YouTubeID_StartTime_EndTime': {
+      'ko' : 'Parallel Korean Caption',
+      'en' : 'Parallel English Caption'},
+      ...
+  }
+  ```
 <br>
 
 ## (OPTIONAL) EXTRACT VIDEO FEATURES 
@@ -68,23 +68,23 @@ pip install --upgrade gluoncv
 
 ### 1. Extract Video Features
 - extract video features using the Inception-v1 I3D model pretrained on Kinetics 400 dataset and save them as .npy files. each video would be represented as a numpy array of size (1, num_of_segments, 1024).
-```
-python action_feature_extractor.py
-```
+  ```
+  python action_feature_extractor.py
+  ```
 
 ### 2. Create Action Labels
 - some VMT models (i.e., [DEAR](https://www.sciencedirect.com/science/article/abs/pii/S0950705122002684)) take video action labels as an input. we could create action labels also by using pretrained I3D model.
-```
-python action_label_extractor.py
-```
+  ```
+  python action_label_extractor.py
+  ```
 - cf. action_labels.json annotation format
-```
-{
-  'YouTubeID_StartTime_EndTime': 
-  [19, 17, 191, 171, 97],
-   ...
-}
-```
+  ```
+  {
+    'YouTubeID_StartTime_EndTime': 
+    [19, 17, 191, 171, 97],
+    ...
+  }
+  ```
 ### Then, our 'data' directory would be configured as following.
 ```
 data
@@ -139,25 +139,25 @@ You've already created them, right ?
 - basics  
 : python==3.6+ recommended. I used python 3.9.12  
   pytorch1.0.0+ recommended. I used torch==1.7.1+cu110
-```
-pip install torch 
-```
+  ```
+  pip install torch 
+  ```
 - install konlpy + MeCab (for DEAR_ko)  
 : this may be troublesome, but our friend google is always there for you. good luck !
-```
-# konlpy
-sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl  # install Java 1.8 or up
+  ```
+  # konlpy
+  sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl  # install Java 1.8 or up
 
-python3 -m pip install --upgrade pip
-python3 -m pip install konlpy   
-```
-```
-# MeCab
-sudo apt-get install curl git
-bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh) 
-# if apt-get update fails due to NO_PUBKEY error, run the following code and try again
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
-```
+  python3 -m pip install --upgrade pip
+  python3 -m pip install konlpy   
+  ```
+  ```
+  # MeCab
+  sudo apt-get install curl git
+  bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh) 
+  # if apt-get update fails due to NO_PUBKEY error, run the following code and try again
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+  ```
 ### Train the Model
 ```
 python train_circle.py
@@ -192,24 +192,24 @@ You've already created parallel sentence pairs and corresponding video clips, ri
 
 - install konlpy + MeCab (for VRET_ko)  
 : this may be troublesome, but our friend google is always there for you. good luck !
-```
-# konlpy
-sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl  # install Java 1.8 or up
+  ```
+  # konlpy
+  sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl  # install Java 1.8 or up
 
-python3 -m pip install --upgrade pip
-python3 -m pip install konlpy   
-```
-```
-# MeCab
-sudo apt-get install curl git
-bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
-# if apt-get update fails due to NO_PUBKEY error, run the following code and try again
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
-```
+  python3 -m pip install --upgrade pip
+  python3 -m pip install konlpy   
+  ```
+  ```
+  # MeCab
+  sudo apt-get install curl git
+  bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
+  # if apt-get update fails due to NO_PUBKEY error, run the following code and try again
+  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A4B469963BF863CC
+  ```
 - install TrTokenizer (for VRET)
-```
-pip install trtokenizer
-```  
+  ```
+  pip install trtokenizer
+  ```  
 ### Train the Model
 ```
 python train.py

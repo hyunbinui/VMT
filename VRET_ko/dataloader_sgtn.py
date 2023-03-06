@@ -7,6 +7,20 @@ from torch.utils.data import Dataset, DataLoader
 import random
 from utils import padding_idx
 
+
+########################################################################
+# scene node 결측치 처리
+def load_fake_scene_node():
+    s_video_feature = np.random.rand(32, 20, 556).astype(np.float32)
+    return s_video_feature
+
+# scene graph 결측치 처리
+def load_fake_scene_graph():
+    s_video_graph = np.random.rand(32, 20, 20).astype(np.float32)
+    return s_video_graph
+########################################################################
+
+
 def load_video_features(fpath, max_length):
     feats = np.load(fpath, encoding='latin1')  # encoding='latin1' to handle the inconsistency between python 2 and 3
     if feats.shape[0] < max_length:
